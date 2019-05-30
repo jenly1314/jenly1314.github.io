@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://jenly1314.github.io
+url: https://jenly1314.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -87,7 +87,7 @@ theme: hexo-theme-matery
 
 deploy:
   type: git 
-  repo: https://github.com/jenly1314/jenly1314.github.io.git
+  repo: git@github.com:jenly1314/jenly1314.github.com.git
   branch: master
   
 search:
