@@ -26,7 +26,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: 
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -89,7 +89,6 @@ deploy:
   type: git 
  # repo: git@github.com:jenly1314/jenly1314.github.com.git
   repo: https://github.com/jenly1314/jenly1314.github.io.git
-  branch: master
   
 search:
   path: search.xml
@@ -99,11 +98,6 @@ permalink_pinyin:
   enable: true
   separator: '-' # default: '-'
   
-wordCount:
-  enable: true # 将这个值设置为 true 即可.
-  postWordCount: true
-  min2read: true
-  totalCount: true
   
 feed:
   type: atom
