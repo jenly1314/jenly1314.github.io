@@ -85,9 +85,7 @@ theme: hexo-theme-matery
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-type: git 
-repo: git@github.com:jenly1314/jenly1314.github.io.git  //（改成自己的用户名和用户名加域名） 
-branch: master
+  type:
   
 search:
   path: search.xml
