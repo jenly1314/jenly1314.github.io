@@ -239,7 +239,7 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: true
+  enable: false
   owner: Jenly
   repo: jenly1314.github.io
   oauth: 
@@ -289,7 +289,7 @@ valine:
 githubLink:
   enable: true
   url: https://github.com/jenly1314
-  title: Follow Me
+  title: Fork Me
 
 # The password verification feature of read post. To use this feature,
 # activate the configuration item and write the 'password' key and Cipher in the post's Front-matter.
