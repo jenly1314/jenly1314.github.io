@@ -239,14 +239,14 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: false
+  enable: true
   owner: Jenly
   repo: jenly1314.github.io
   oauth: 
     clientId: f9b60da4625d996971e6
     clientSecret: 969922ddb29caa0b2b5bf03dc6b32f3507d80530
   admin: 
-   -Jenly
+   - Jenly
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
