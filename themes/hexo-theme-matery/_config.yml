@@ -146,7 +146,7 @@ wordCount:
   enable: true
   postWordCount: true
   min2read: true
-  totalCount: false
+  totalCount: true
 
 # Whether to activate the 'love' effect of clicking on the page.
 # 是否激活点击页面的'爱心'效果，默认激活.
@@ -239,14 +239,14 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: false
-  owner: Jenly
+  enable: true
+  owner: jenly1314
   repo: jenly1314.github.io
-  oauth: 
+  oauth:
     clientId: f9b60da4625d996971e6
     clientSecret: 969922ddb29caa0b2b5bf03dc6b32f3507d80530
   admin: 
-   - Jenly
+   - jenly1314
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
