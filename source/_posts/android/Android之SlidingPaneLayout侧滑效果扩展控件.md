@@ -1,7 +1,7 @@
 ---
 title: Android之SlidingPaneLayout侧滑效果扩展（SuperSlidingPaneLayout）
 date: 2016-10-08 17:06:59
-img: images/20161008.jpg
+img: /images/20161008.jpg
 categories: Android
 tags:
   - SlidingPaneLayout
@@ -143,6 +143,6 @@ public enum Mode {
 ```
 ### 收工：
 这样几种不同的侧滑效果就算完成了，有木有很简单？下面我们来看下最终的效果图：
-![](Android之SlidingPaneLayout侧滑效果扩展/20161008172543455.gif)
+![](Android之SlidingPaneLayout侧滑效果扩展控件/20161008172543455.gif)
 
 [SuperSlidingPaneLayout](https://github.com/jenly1314/SuperSlidingPaneLayout)最新源码已上传至**github**欢迎**Star**和**Fork**。
