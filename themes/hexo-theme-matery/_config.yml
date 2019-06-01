@@ -178,7 +178,7 @@ myProjects:
         desc: 一个基于ZXing优化精简的开源扫码库，扫码识别速度快如微信。
     WanAndroid:
         icon: fa-android
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #DAA520 100%)'
+        iconBackground: 'linear-gradient(to bottom right, #8A2BE2 0%, #00BFFF 100%)'
         url: https://github.com/jenly1314/WanAndroid
         desc: 基于Architecture Components dependencies（Lifecycle，LiveData，ViewModel，Room）构建的WanAndroid开源项目
     MVPFrame:
@@ -228,9 +228,9 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - /medias/featureimages/0.jpg
-    - /medias/featureimages/1.jpg
-    - /medias/featureimages/2.jpg
+    - /medias/featureimages/11.jpg
+    - /medias/featureimages/18.jpg
+    - /medias/featureimages/23.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
