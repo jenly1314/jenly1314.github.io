@@ -171,7 +171,7 @@ myProjects:
   data:
     KingTV:
       icon: fa-play
-      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #6A5ACD 100%)'
+      iconBackground: 'linear-gradient(to bottom right, #17AAE1 0%, #8A2BE2 100%)'
       url: http://github.com/jenly1314/KingTV
       desc: 一个基于MVP构建的高仿全民直播（全民TV）开源项目。
     ZXingLite:
@@ -191,14 +191,30 @@ myProjects:
         desc: MVPFrame是一个集合了 Retrofit2 + RXJava2 + OkHttp3 + Mosby3 二次封装构建的MVP快速开发框架，为敏捷开发而生
     MVVMFrame:
         icon: fa-home
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #32CD32 100%)'
+        iconBackground: 'linear-gradient(to bottom right, #7B68EE 0%, #32CD32 100%)'
         url: https://github.com/jenly1314/MVVMFrame
         desc: 基于Google官方推出的Jitpack（Lifecycle，LiveData，ViewModel，Room）构建的MVVM快速开发框架
     AppUpdater:
         icon: fa-download
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #17AAE1 100%)'
+        iconBackground: 'linear-gradient(to bottom right, #32CD32 0%, #17AAE1 100%)'
         url: https://github.com/jenly1314/AppUpdater
         desc: AppUpdater是一个专注于App更新，一键傻瓜式集成App版本升级的开源库。(无需担心通知栏适配；无需担心重复点击下载；无需担心App安装等问题；这些AppUpdater都已帮您处理好。)
+    CircleProgressView:
+        icon: fa-spinner
+        iconBackground: 'linear-gradient(to bottom right, #17AAE1 0%, #008000 100%)'
+        url: https://github.com/jenly1314/CircleProgressView
+        desc: CircleProgressView是一个圆形渐变的进度动画控件，动画效果纵享丝滑。
+    Base:
+        icon: fa-fort-awesome
+        iconBackground: 'linear-gradient(to bottom right, #32CD32 0%, #DAA520 100%)'
+        url: https://github.com/jenly1314/Base
+        desc: Base是针对于Android开发封装好一些常用的基类，主要包括通用的Adapter、Activity、Fragment、Dialog等、和一些常用的Util类，只为更简单。
+    GiftSurfaceView:
+        icon: fa-gift
+        iconBackground: 'linear-gradient(to bottom right, #00BFFF 0%, #FF1493 100%)'
+        url: https://github.com/jenly1314/GiftSurfaceView
+        desc: GiftSurfaceView 是一个用于直播类App，直播间送礼物拼图案的动画控件。
+
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
