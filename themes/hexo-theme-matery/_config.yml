@@ -96,10 +96,12 @@ socialLink:
   github: https://github.com/jenly1314
   email: jenly1314@gmail.com
   weibo: https://weibo.com/jenly1314
-  facebook: https://facebook.com/jenly1314
-  twitter: https://twitter.com/jenly1314
+  facebook: # https://facebook.com/jenly1314
+  twitter: # https://twitter.com/jenly1314
   qqgroup: 20867961
   qqgroupkey: 8fcc6a2f88552ea44b1411582c94fd124f7bb3ec227e2a400dbbfaad3dc2f5ad
+  about: https://about.me/jenly1314
+
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # You can add `toc: false` to the Front-matter of a post to turn off the TOC.
