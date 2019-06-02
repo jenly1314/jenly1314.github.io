@@ -16,6 +16,31 @@
     </a>
 <% } %>
 
+<% if (theme.socialLink.qqgroup) { %>
+    <a href="http://shang.qq.com/wpa/qunwpa?idkey=<%= theme.socialLink.qqgroupkey %>" class="tooltipped" data-tooltip="加入QQ群: <%= theme.socialLink.qqgroup %>" data-position="top" data-delay="50">
+	<i class="fa fa-qq"></i>
+    </a>
+<% } %>
+
+<% if (theme.socialLink.weibo) { %>
+    <a href="<%= theme.socialLink.weibo %>" class="tooltipped" target="_blank" data-tooltip="访问我的微博" data-position="top" data-delay="50">
+        <i class="fa fa-weibo"></i>
+    </a>
+<% } %>
+
+<% if (theme.socialLink.facebook) { %>
+    <a href="<%= theme.socialLink.facebook %>" class="tooltipped" target="_blank" data-tooltip="访问我的facebook" data-position="top" data-delay="50">
+        <i class="fa fa-facebook"></i>
+    </a>
+<% } %>
+
+<% if (theme.socialLink.twitter) { %>
+    <a href="<%= theme.socialLink.twitter %>" class="tooltipped" target="_blank" data-tooltip="访问我的Twitter" data-position="top" data-delay="50">
+        <i class="fa fa-twitter"></i>
+    </a>
+<% } %>
+
+
 <% if (config.feed && config.feed.path == 'atom.xml') { %>
     <a href="<%- url_for('/atom.xml') %>" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
         <i class="fa fa-rss"></i>
