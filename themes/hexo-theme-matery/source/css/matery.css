@@ -217,9 +217,18 @@ header .brand-logo .logo-img {
     vertical-align: middle;
     padding-bottom: 6px;
 }
-
+header .brand-logo img{
+	display:none;
+}
+header nav .brand-logo{
+	font-size: 0;
+}
 header .brand-logo .logo-span {
     font-size: 2rem;
+    background: url("/medias/logo.png") no-repeat left center/auto 100%;
+    padding-left: 44px;
+    height: 64px;
+    line-height: 64px;
 }
 
 header .button-collapse i {
