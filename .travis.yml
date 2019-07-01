@@ -2,7 +2,7 @@ language: node_js
 node_js: stable
 
 install:
-  - npm install hexo
+  - npm install
 
 script:
   - hexo clean
@@ -15,12 +15,12 @@ after_script:
   - git config user.email "jenly1314@gmail.com"
   - git add .
   - git commit -a -m "Auto update docs by Travis CI."
-#  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 #  - git push --force --quiet "https://${CODING_TOKEN}@${CODING_REF}" master:master
 
 branches:
   only:
- #   - blog-source
+    - blog-source
 
 env:
  global:
