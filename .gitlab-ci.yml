@@ -1,19 +1,21 @@
 image: node:10.16.0
 
-pages:
-  cache:
-    paths:
+cache:
+  paths:
     - node_modules/
 
-  script:
+before_script:
   - npm install hexo-cli -g
-  - npm install
-  - hexo clean
+  - test -e package.json && npm install
   - hexo generate
+
+pages:
+  script:
+    - hexo generate
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - blog-source
+    - blog-source
 
 
