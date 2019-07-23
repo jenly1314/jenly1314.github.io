@@ -8,7 +8,8 @@ pages:
   script:
   - npm install hexo-cli -g
   - npm install
-  - hexo deploy
+  - hexo clean
+  - hexo generate
   artifacts:
     paths:
     - public
