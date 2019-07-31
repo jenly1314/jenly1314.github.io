@@ -87,7 +87,7 @@ theme: hexo-theme-matery
 
 deploy:
   type: git 
- # repo: git@github.com:jenly1314/jenly1314.github.com.git
+ # repo: git@github.com:jenly1314/jenly1314.github.io.git
   repo: https://github.com/jenly1314/jenly1314.github.io.git
   
 search:
