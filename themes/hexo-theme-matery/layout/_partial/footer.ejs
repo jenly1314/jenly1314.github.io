@@ -1,11 +1,10 @@
 <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            本站由&copy;<a href="https://jenly1314.github.io/" target="_blank">Jenly</a> 基于
-            <a href="https://hexo.io/" target="_blank">Hexo</a> 搭建.
-
+            &copy; <%= date(new Date(), 'YYYY') %> <a href="https://jenly1314.github.io/" target="_blank">Jenly</a> Powered by
+            <a href="https://hexo.io/" target="_blank">Hexo</a>.
             <% if (theme.wordCount.enable && theme.wordCount.totalCount) { %>
-                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+                &nbsp;<i class="fa fa-area-chart"></i>
                 <span class="white-color"><%= totalcount(site) %></span>
             <% } %>
 
