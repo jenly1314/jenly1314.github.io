@@ -25,4 +25,4 @@ branches:
 env:
  global:
    - GH_REF: github.com/jenly1314/jenly1314.github.io.git
-   - CODING_REF: git.coding.net/jenly/jenly.coding.me.git
+   
