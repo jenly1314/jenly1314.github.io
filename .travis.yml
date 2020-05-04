@@ -2,7 +2,7 @@ language: node_js
 node_js: stable
 
 install:
-  - npm install
+  - npm install hexo-cli -g
 
 script:
   - hexo clean
