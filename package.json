@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.8.0"
+    "version": "3.9.0"
   },
   "dependencies": {
     "canvas-nest.js": "^2.0.4",
     "gitalk": "^1.5.0",
-    "hexo": "^3.8.0",
+    "hexo": "^3.9.0",
     "hexo-asset-image": "git+https://github.com/CodeFalling/hexo-asset-image.git",
     "hexo-deployer-git": "^1.0.0",
     "hexo-generator-archive": "^0.1.5",
@@ -20,9 +20,12 @@
     "hexo-permalink-pinyin": "^1.1.0",
     "hexo-prism-plugin": "^2.3.0",
     "hexo-renderer-ejs": "^0.3.1",
-    "hexo-renderer-marked": "^1.0.1",
+    "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.3",
-    "hexo-wordcount": "^6.0.1"
+    "hexo-wordcount": "^6.0.1",
+    "react": "^16.13.1",
+    "react-flip-move": "^2.9.14",
+    "semver": "^7.3.2"
   }
 }
