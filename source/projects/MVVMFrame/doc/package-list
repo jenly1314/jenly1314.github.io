@@ -8,6 +8,7 @@ com.king.frame.mvvmframe.data
 com.king.frame.mvvmframe.di.component
 com.king.frame.mvvmframe.di.module
 com.king.frame.mvvmframe.di.scope
+com.king.frame.mvvmframe.http
 com.king.frame.mvvmframe.http.callback
 com.king.frame.mvvmframe.http.interceptor
 com.king.frame.mvvmframe.util
