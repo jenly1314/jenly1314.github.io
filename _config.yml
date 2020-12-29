@@ -9,14 +9,17 @@ description: 心之所向，素履以往。
 keywords: Jenly
 author: Jenly
 language: zh-CN
-timezone:
+timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: /
+url: https://jenly1314.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -32,7 +35,10 @@ skip_render: ['README.md', projects/**,api/**]
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -42,8 +48,11 @@ highlight:
   enable: false
   line_number: true
   auto_detect: false
-  tab_replace:
+  tab_replace: ''
+  wrap: true
+  hljs: false
   
+                                                                                                                                                                                                                                                                                            
 #prism插件 用来显示代码高亮  
 prism_plugin:
   mode: 'preprocess'    # realtime/preprocess
@@ -64,6 +73,10 @@ index_generator:
 default_category: uncategorized
 category_map:
 tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
