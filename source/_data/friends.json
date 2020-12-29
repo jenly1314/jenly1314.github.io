@@ -1,5 +1,5 @@
 [{
-	"avatar": "https://jenly1314.github.io/image/avatar.jpg",
+	"avatar": "../image/avatar.jpg",
 	"name": "Jenly",
 	"introduction": "从入门到放弃",
 	"url": "https://jenly1314.github.io/",

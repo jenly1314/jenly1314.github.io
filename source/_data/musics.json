@@ -2,37 +2,37 @@
 	{
 		"name": "Faded",
 		"artist": "Alan Walker",
-		"url": "https://jenly1314.gitee.io/musics/Faded.mp3",
-		"cover": "https://jenly1314.gitee.io/musics/Faded.jpg"
+		"url": "musics/Faded.mp3",
+		"cover": "musics/Faded.jpg"
 	},
 	{
 		"name": "Love To Be Loved By You",
 		"artist": "Marc Terenzi",
-		"url": "https://jenly1314.gitee.io/musics/LoveToBeLovedByYou.mp3",
-		"cover": "https://jenly1314.gitee.io/musics/LoveToBeLovedByYou.jpg"
+		"url": "musics/LoveToBeLovedByYou.mp3",
+		"cover": "musics/LoveToBeLovedByYou.jpg"
 	},
 	{
 		"name": "Take me hand",
 		"artist": "DAISHI DANCE / Cecile Corbel",
-		"url": "https://jenly1314.gitee.io/musics/TakeMeHand.mp3",
-		"cover": "https://jenly1314.gitee.io/musics/TakeMeHand.jpg"
+		"url": "musics/TakeMeHand.mp3",
+		"cover": "musics/TakeMeHand.jpg"
 	},
 	{
 		"name": "Something Just Like This",
 		"artist": "The Chainsmokers / Coldplay",
-		"url": "https://jenly1314.gitee.io/musics/SomethingJustLikeThis.mp3",
-		"cover": "https://jenly1314.gitee.io/musics/SomethingJustLikeThis.jpg"
+		"url": "musics/SomethingJustLikeThis.mp3",
+		"cover": "musics/SomethingJustLikeThis.jpg"
 	},
 	{
 		"name": "That Girl",
 		"artist": "Olly Murs",
-		"url": "https://jenly1314.gitee.io/musics/ThatGirl.mp3",
-		"cover": "https://jenly1314.gitee.io/musics/ThatGirl.jpg"
+		"url": "musics/ThatGirl.mp3",
+		"cover": "musics/ThatGirl.jpg"
 	},
 	{
 		"name": "Legends Never Die",
 		"artist": "Against the Current",
-		"url": "https://jenly1314.gitee.io/musics/LegendsNeverDie.mp3",
-		"cover": "https://jenly1314.gitee.io/musics/LegendsNeverDie.jpg"
+		"url": "musics/LegendsNeverDie.mp3",
+		"cover": "musics/LegendsNeverDie.jpg"
 	}
 ]

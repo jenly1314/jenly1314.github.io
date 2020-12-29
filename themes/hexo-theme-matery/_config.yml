@@ -59,7 +59,7 @@ video:
   enable: true
   showTitle: true
   title: 精彩视频
-  url: https://jenly1314.gitee.io/videos/WOD2017NBC-Kinjaz.mp4
+  url: videos/WOD2017NBC_Kinjaz.mp4
   pic:
   thumbnails:
   height: # 如：400
