@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../com/king/frame/mvvmframe/base/ContentActivity.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">上一个类</span></a></li>
-<li><a href="../../../../../com/king/frame/mvvmframe/base/IAppComponent.html" title="com.king.frame.mvvmframe.base中的接口"><span class="typeNameLink">下一个类</span></a></li>
+<li><a href="../../../../../com/king/frame/mvvmframe/base/ILoading.html" title="com.king.frame.mvvmframe.base中的接口"><span class="typeNameLink">下一个类</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?com/king/frame/mvvmframe/base/DataViewModel.html" target="_top">框架</a></li>
@@ -74,7 +74,7 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>概要:&nbsp;</li>
 <li>嵌套&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.com.king.frame.mvvmframe.base.BaseViewModel">字段</a>&nbsp;|&nbsp;</li>
+<li>字段&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">构造器</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">方法</a></li>
 </ul>
@@ -118,35 +118,21 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>所有已实现的接口:</dt>
-<dd><a href="../../../../../com/king/frame/mvvmframe/base/ILoading.html" title="com.king.frame.mvvmframe.base中的接口">ILoading</a>, <a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html" title="com.king.frame.mvvmframe.base中的接口">IViewModel</a></dd>
+<dd><a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html" title="com.king.frame.mvvmframe.base中的接口">IViewModel</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DataViewModel</span>
 extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类">BaseViewModel</a>&lt;<a href="../../../../../com/king/frame/mvvmframe/base/BaseModel.html" title="com.king.frame.mvvmframe.base中的类">BaseModel</a>&gt;</pre>
-<div class="block">默认提供<a href="../../../../../com/king/frame/mvvmframe/base/BaseModel.html#getRetrofitService-java.lang.Class-"><code>BaseModel.getRetrofitService(java.lang.Class&lt;T&gt;)</code></a>的功能，当ViewModel和Model数据比较简单时可使用本类，弱化Model层。
- 如果ViewModel或Model层里面逻辑比较复杂请尽量使用继承<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类"><code>BaseViewModel</code></a> 和<a href="../../../../../com/king/frame/mvvmframe/base/BaseModel.html" title="com.king.frame.mvvmframe.base中的类"><code>BaseModel</code></a>进行分层。</div>
+<div class="block">MVVMFrame 框架基于Google官方的 JetPack 构建，在使用MVVMFrame时，需遵循一些规范：
+
+ 如果您继承使用了DataViewModel或其子类，你需要参照如下方式在构造函数上添加@ViewModelInject注解</div>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>字段概要</h3>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.com.king.frame.mvvmframe.base.BaseViewModel">
-<!--   -->
-</a>
-<h3>从类继承的字段&nbsp;com.king.frame.mvvmframe.base.<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类">BaseViewModel</a></h3>
-<code><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#mModel">mModel</a></code></li>
-</ul>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -202,7 +188,7 @@ extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html
 <!--   -->
 </a>
 <h3>从类继承的方法&nbsp;com.king.frame.mvvmframe.base.<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类">BaseViewModel</a></h3>
-<code><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getLoadingEvent--">getLoadingEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--">getMessageEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getModel--">getModel</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getSingleLiveEvent--">getSingleLiveEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getStatusEvent--">getStatusEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#hideLoading--">hideLoading</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onAny-LifecycleOwner-Lifecycle.Event-">onAny</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onCreate--">onCreate</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onDestroy--">onDestroy</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onPause--">onPause</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onResume--">onResume</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onStart--">onStart</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onStop--">onStop</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postHideLoading--">postHideLoading</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postMessage-int-">postMessage</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postMessage-java.lang.String-">postMessage</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postShowLoading--">postShowLoading</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postSingleLiveEvent-int-">postSingleLiveEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postSingleLiveEvent-android.os.Message-">postSingleLiveEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postUpdateStatus-int-">postUpdateStatus</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendMessage-int-">sendMessage</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendMessage-java.lang.String-">sendMessage</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendSingleLiveEvent-int-">sendSingleLiveEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendSingleLiveEvent-android.os.Message-">sendSingleLiveEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#showLoading--">showLoading</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#updateStatus-int-">updateStatus</a></code></li>
+<code><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getLoadingEvent--">getLoadingEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--">getMessageEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getModel--">getModel</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getSingleLiveEvent--">getSingleLiveEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getStatusEvent--">getStatusEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#hideLoading--">hideLoading</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#hideLoading-boolean-">hideLoading</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onAny-LifecycleOwner-Lifecycle.Event-">onAny</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onCreate--">onCreate</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onDestroy--">onDestroy</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onPause--">onPause</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onResume--">onResume</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onStart--">onStart</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onStop--">onStop</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendMessage-int-">sendMessage</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendMessage-int-boolean-">sendMessage</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendMessage-java.lang.String-">sendMessage</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendMessage-java.lang.String-boolean-">sendMessage</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendSingleLiveEvent-int-">sendSingleLiveEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendSingleLiveEvent-int-boolean-">sendSingleLiveEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendSingleLiveEvent-android.os.Message-">sendSingleLiveEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendSingleLiveEvent-android.os.Message-boolean-">sendSingleLiveEvent</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#showLoading--">showLoading</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#showLoading-boolean-">showLoading</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#updateStatus-int-">updateStatus</a>, <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#updateStatus-int-boolean-">updateStatus</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -327,7 +313,7 @@ extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../com/king/frame/mvvmframe/base/ContentActivity.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">上一个类</span></a></li>
-<li><a href="../../../../../com/king/frame/mvvmframe/base/IAppComponent.html" title="com.king.frame.mvvmframe.base中的接口"><span class="typeNameLink">下一个类</span></a></li>
+<li><a href="../../../../../com/king/frame/mvvmframe/base/ILoading.html" title="com.king.frame.mvvmframe.base中的接口"><span class="typeNameLink">下一个类</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?com/king/frame/mvvmframe/base/DataViewModel.html" target="_top">框架</a></li>
@@ -352,7 +338,7 @@ extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html
 <ul class="subNavList">
 <li>概要:&nbsp;</li>
 <li>嵌套&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.com.king.frame.mvvmframe.base.BaseViewModel">字段</a>&nbsp;|&nbsp;</li>
+<li>字段&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">构造器</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">方法</a></li>
 </ul>

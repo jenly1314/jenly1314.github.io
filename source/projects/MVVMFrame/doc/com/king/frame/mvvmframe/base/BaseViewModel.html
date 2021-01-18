@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>概要:&nbsp;</li>
 <li>嵌套&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">字段</a>&nbsp;|&nbsp;</li>
+<li>字段&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">构造器</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">方法</a></li>
 </ul>
 <ul class="subNavList">
 <li>详细资料:&nbsp;</li>
-<li><a href="#field.detail">字段</a>&nbsp;|&nbsp;</li>
+<li>字段&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">构造器</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">方法</a></li>
 </ul>
@@ -113,7 +113,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>所有已实现的接口:</dt>
-<dd><a href="../../../../../com/king/frame/mvvmframe/base/ILoading.html" title="com.king.frame.mvvmframe.base中的接口">ILoading</a>, <a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html" title="com.king.frame.mvvmframe.base中的接口">IViewModel</a></dd>
+<dd><a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html" title="com.king.frame.mvvmframe.base中的接口">IViewModel</a></dd>
 </dl>
 <dl>
 <dt>直接已知子类:</dt>
@@ -123,35 +123,16 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">BaseViewModel&lt;M extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseModel.html" title="com.king.frame.mvvmframe.base中的类">BaseModel</a>&gt;</span>
 extends AndroidViewModel
-implements <a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html" title="com.king.frame.mvvmframe.base中的接口">IViewModel</a>, <a href="../../../../../com/king/frame/mvvmframe/base/ILoading.html" title="com.king.frame.mvvmframe.base中的接口">ILoading</a></pre>
-<div class="block">标准MVVM模式中的VM (ViewModel)层基类</div>
+implements <a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html" title="com.king.frame.mvvmframe.base中的接口">IViewModel</a></pre>
+<div class="block">MVVMFrame 框架基于Google官方的 JetPack 构建，在使用MVVMFrame时，需遵循一些规范：
+
+ 如果您继承使用了BaseViewModel或其子类，你需要参照如下方式在构造函数上添加@ViewModelInject注解</div>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>字段概要</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="字段概要表, 列表字段和解释">
-<caption><span>字段</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">限定符和类型</th>
-<th class="colLast" scope="col">字段和说明</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="BaseViewModel中的类型参数">M</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#mModel">mModel</a></span></code>
-<div class="block"><span class="deprecatedLabel">已过时。</span>&nbsp;</div>
-</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -165,7 +146,9 @@ implements <a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#BaseViewModel-android.app.Application-M-">BaseViewModel</a></span>(android.app.Application&nbsp;application,
-             <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="BaseViewModel中的类型参数">M</a>&nbsp;model)</code>&nbsp;</td>
+             <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="BaseViewModel中的类型参数">M</a>&nbsp;model)</code>
+<div class="block">继承者都将使用此构造</div>
+</td>
 </tr>
 </table>
 </li>
@@ -229,44 +212,44 @@ implements <a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onAny-LifecycleOwner-Lifecycle.Event-">onAny</a></span>(LifecycleOwner&nbsp;owner,
-     Lifecycle.Event&nbsp;event)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onCreate--">onCreate</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onDestroy--">onDestroy</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onPause--">onPause</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onResume--">onResume</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onStart--">onStart</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onStop--">onStop</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postHideLoading--">postHideLoading</a></span>()</code>
-<div class="block">调用此类会异步通知执行<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#hideLoading--"><code>BaseActivity.hideLoading()</code></a>或<a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#hideLoading--"><code>BaseFragment.hideLoading()</code></a>或
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#hideLoading-boolean-">hideLoading</a></span>(boolean&nbsp;post)</code>
+<div class="block">调用此类会同步通知执行<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#hideLoading--"><code>BaseActivity.hideLoading()</code></a>或<a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#hideLoading--"><code>BaseFragment.hideLoading()</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#hideLoading--"><code>BaseDialogFragment.hideLoading()</code></a></div>
 </td>
 </tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onAny-LifecycleOwner-Lifecycle.Event-">onAny</a></span>(LifecycleOwner&nbsp;owner,
+     Lifecycle.Event&nbsp;event)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onCreate--">onCreate</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onDestroy--">onDestroy</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onPause--">onPause</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onResume--">onResume</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onStart--">onStart</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#onStop--">onStop</a></span>()</code>&nbsp;</td>
+</tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postMessage-int-">postMessage</a></span>(int&nbsp;msgId)</code>
-<div class="block">同步异步发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendMessage-int-">sendMessage</a></span>(int&nbsp;msgId)</code>
+<div class="block">发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a> 或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseDialogFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a>接收消息事件，
  也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--"><code>getMessageEvent()</code></a>接收消息事件</div>
@@ -274,8 +257,9 @@ implements <a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postMessage-java.lang.String-">postMessage</a></span>(java.lang.String&nbsp;message)</code>
-<div class="block">异步发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendMessage-int-boolean-">sendMessage</a></span>(int&nbsp;msgId,
+           boolean&nbsp;post)</code>
+<div class="block">发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a> 或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseDialogFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a>接收消息事件，
  也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--"><code>getMessageEvent()</code></a>接收消息事件</div>
@@ -283,25 +267,27 @@ implements <a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postShowLoading--">postShowLoading</a></span>()</code>
-<div class="block">调用此类会异步通知执行<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#showLoading--"><code>BaseActivity.showLoading()</code></a>或<a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#showLoading--"><code>BaseFragment.showLoading()</code></a>或
- <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#showLoading--"><code>BaseDialogFragment.showLoading()</code></a></div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendMessage-java.lang.String-">sendMessage</a></span>(java.lang.String&nbsp;message)</code>
+<div class="block">发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
+ <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a> 或
+ <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseDialogFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a>接收消息事件，
+ 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--"><code>getMessageEvent()</code></a>接收消息事件</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postSingleLiveEvent-int-">postSingleLiveEvent</a></span>(int&nbsp;what)</code>
-<div class="block">异步发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
- 通过注册<code>BaseActivity#registerSingleLiveEvent(Observer)</code>或
- <code>BaseFragment#registerSingleLiveEvent(Observer)</code> 或
- <code>BaseDialogFragment#registerSingleLiveEvent(Observer)</code>接收消息事件，
- 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getSingleLiveEvent--"><code>getSingleLiveEvent()</code></a>接收消息事件</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendMessage-java.lang.String-boolean-">sendMessage</a></span>(java.lang.String&nbsp;message,
+           boolean&nbsp;post)</code>
+<div class="block">发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
+ <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a> 或
+ <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseDialogFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a>接收消息事件，
+ 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--"><code>getMessageEvent()</code></a>接收消息事件</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postSingleLiveEvent-android.os.Message-">postSingleLiveEvent</a></span>(android.os.Message&nbsp;message)</code>
-<div class="block">异步发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendSingleLiveEvent-int-">sendSingleLiveEvent</a></span>(int&nbsp;what)</code>
+<div class="block">发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
  通过注册<code>BaseActivity#registerSingleLiveEvent(Observer)</code>或
  <code>BaseFragment#registerSingleLiveEvent(Observer)</code> 或
  <code>BaseDialogFragment#registerSingleLiveEvent(Observer)</code>接收消息事件，
@@ -310,62 +296,64 @@ implements <a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#postUpdateStatus-int-">postUpdateStatus</a></span>(int&nbsp;status)</code>
-<div class="block">异步更新状态，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseActivity.registerStatusEvent(StatusEvent.StatusObserver)</code></a>或
- <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseFragment.registerStatusEvent(StatusEvent.StatusObserver)</code></a> 或
- <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseDialogFragment.registerStatusEvent(StatusEvent.StatusObserver)</code></a>接收消息事件，
- 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getStatusEvent--"><code>getStatusEvent()</code></a>接收消息事件</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendSingleLiveEvent-int-boolean-">sendSingleLiveEvent</a></span>(int&nbsp;what,
+                   boolean&nbsp;post)</code>
+<div class="block">发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
+ 通过注册<code>BaseActivity#registerSingleLiveEvent(Observer)</code>或
+ <code>BaseFragment#registerSingleLiveEvent(Observer)</code> 或
+ <code>BaseDialogFragment#registerSingleLiveEvent(Observer)</code>接收消息事件，
+ 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getSingleLiveEvent--"><code>getSingleLiveEvent()</code></a>接收消息事件</div>
 </td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendMessage-int-">sendMessage</a></span>(int&nbsp;msgId)</code>
-<div class="block">同步发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
- <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a> 或
- <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseDialogFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a>接收消息事件，
- 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--"><code>getMessageEvent()</code></a>接收消息事件</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendSingleLiveEvent-android.os.Message-">sendSingleLiveEvent</a></span>(android.os.Message&nbsp;message)</code>
+<div class="block">发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
+ 通过注册<code>BaseActivity#registerSingleLiveEvent(Observer)</code>或
+ <code>BaseFragment#registerSingleLiveEvent(Observer)</code> 或
+ <code>BaseDialogFragment#registerSingleLiveEvent(Observer)</code>接收消息事件，
+ 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getSingleLiveEvent--"><code>getSingleLiveEvent()</code></a>接收消息事件</div>
 </td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendMessage-java.lang.String-">sendMessage</a></span>(java.lang.String&nbsp;message)</code>
-<div class="block">同步发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
- <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a> 或
- <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseDialogFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a>接收消息事件，
- 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--"><code>getMessageEvent()</code></a>接收消息事件</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendSingleLiveEvent-android.os.Message-boolean-">sendSingleLiveEvent</a></span>(android.os.Message&nbsp;message,
+                   boolean&nbsp;post)</code>
+<div class="block">发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
+ 通过注册<code>BaseActivity#registerSingleLiveEvent(Observer)</code>或
+ <code>BaseFragment#registerSingleLiveEvent(Observer)</code> 或
+ <code>BaseDialogFragment#registerSingleLiveEvent(Observer)</code>接收消息事件，
+ 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getSingleLiveEvent--"><code>getSingleLiveEvent()</code></a>接收消息事件</div>
 </td>
 </tr>
 <tr id="i22" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendSingleLiveEvent-int-">sendSingleLiveEvent</a></span>(int&nbsp;what)</code>
-<div class="block">同步发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
- 通过注册<code>BaseActivity#registerSingleLiveEvent(Observer)</code>或
- <code>BaseFragment#registerSingleLiveEvent(Observer)</code> 或
- <code>BaseDialogFragment#registerSingleLiveEvent(Observer)</code>接收消息事件，
- 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getSingleLiveEvent--"><code>getSingleLiveEvent()</code></a>接收消息事件</div>
-</td>
-</tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#sendSingleLiveEvent-android.os.Message-">sendSingleLiveEvent</a></span>(android.os.Message&nbsp;message)</code>
-<div class="block">同步发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
- 通过注册<code>BaseActivity#registerSingleLiveEvent(Observer)</code>或
- <code>BaseFragment#registerSingleLiveEvent(Observer)</code> 或
- <code>BaseDialogFragment#registerSingleLiveEvent(Observer)</code>接收消息事件，
- 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getSingleLiveEvent--"><code>getSingleLiveEvent()</code></a>接收消息事件</div>
-</td>
-</tr>
-<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#showLoading--">showLoading</a></span>()</code>
 <div class="block">调用此类会同步通知执行<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#showLoading--"><code>BaseActivity.showLoading()</code></a>或<a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#showLoading--"><code>BaseFragment.showLoading()</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#showLoading--"><code>BaseDialogFragment.showLoading()</code></a></div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#showLoading-boolean-">showLoading</a></span>(boolean&nbsp;post)</code>
+<div class="block">调用此类会同步通知执行<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#showLoading--"><code>BaseActivity.showLoading()</code></a>或<a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#showLoading--"><code>BaseFragment.showLoading()</code></a>或
+ <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#showLoading--"><code>BaseDialogFragment.showLoading()</code></a></div>
+</td>
+</tr>
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#updateStatus-int-">updateStatus</a></span>(int&nbsp;status)</code>
-<div class="block">同步更新状态，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseActivity.registerStatusEvent(StatusEvent.StatusObserver)</code></a>或
+<div class="block">更新状态，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseActivity.registerStatusEvent(StatusEvent.StatusObserver)</code></a>或
+ <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseFragment.registerStatusEvent(StatusEvent.StatusObserver)</code></a> 或
+ <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseDialogFragment.registerStatusEvent(StatusEvent.StatusObserver)</code></a>接收消息事件，
+ 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getStatusEvent--"><code>getStatusEvent()</code></a>接收消息事件</div>
+</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#updateStatus-int-boolean-">updateStatus</a></span>(int&nbsp;status,
+            boolean&nbsp;post)</code>
+<div class="block">更新状态，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseActivity.registerStatusEvent(StatusEvent.StatusObserver)</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseFragment.registerStatusEvent(StatusEvent.StatusObserver)</code></a> 或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseDialogFragment.registerStatusEvent(StatusEvent.StatusObserver)</code></a>接收消息事件，
  也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getStatusEvent--"><code>getStatusEvent()</code></a>接收消息事件</div>
@@ -387,26 +375,6 @@ implements <a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>字段详细资料</h3>
-<a name="mModel">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>mModel</h4>
-<pre>@Deprecated
-protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="BaseViewModel中的类型参数">M</a> extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseModel.html" title="com.king.frame.mvvmframe.base中的类">BaseModel</a> mModel</pre>
-<div class="block"><span class="deprecatedLabel">已过时。</span>&nbsp;</div>
-<div class="block">请通过 <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getModel--"><code>getModel()</code></a> 获取，后续版本 <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#mModel"><code>mModel</code></a>可能会私有化</div>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -423,6 +391,12 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 <h4>BaseViewModel</h4>
 <pre>public&nbsp;BaseViewModel(android.app.Application&nbsp;application,
                      <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="BaseViewModel中的类型参数">M</a>&nbsp;model)</pre>
+<div class="block">继承者都将使用此构造</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>application</code> - </dd>
+<dd><code>model</code> - </dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -603,23 +577,6 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 </dl>
 </li>
 </ul>
-<a name="sendMessage-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sendMessage</h4>
-<pre>public&nbsp;void&nbsp;sendMessage(java.lang.String&nbsp;message)</pre>
-<div class="block">同步发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
- <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a> 或
- <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseDialogFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a>接收消息事件，
- 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--"><code>getMessageEvent()</code></a>接收消息事件</div>
-<dl>
-<dt><span class="paramLabel">参数:</span></dt>
-<dd><code>message</code> - 消息内容</dd>
-</dl>
-</li>
-</ul>
 <a name="sendMessage-int-">
 <!--   -->
 </a>
@@ -627,7 +584,7 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 <li class="blockList">
 <h4>sendMessage</h4>
 <pre>public&nbsp;void&nbsp;sendMessage(int&nbsp;msgId)</pre>
-<div class="block">同步发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
+<div class="block">发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a> 或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseDialogFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a>接收消息事件，
  也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--"><code>getMessageEvent()</code></a>接收消息事件</div>
@@ -637,14 +594,34 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 </dl>
 </li>
 </ul>
-<a name="postMessage-java.lang.String-">
+<a name="sendMessage-int-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>postMessage</h4>
-<pre>public&nbsp;void&nbsp;postMessage(java.lang.String&nbsp;message)</pre>
-<div class="block">异步发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
+<h4>sendMessage</h4>
+<pre>public&nbsp;void&nbsp;sendMessage(int&nbsp;msgId,
+                        boolean&nbsp;post)</pre>
+<div class="block">发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
+ <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a> 或
+ <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseDialogFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a>接收消息事件，
+ 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--"><code>getMessageEvent()</code></a>接收消息事件</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>msgId</code> - 资源文件id</dd>
+<dd><code>post</code> - 如果为<code>true</code>则可以在子线程调用，相当于调用<code>MutableLiveData#postValue(Object)</code>，
+             如果为<code>false</code> 相当于调用<code>MutableLiveData#setValue(Object)</code></dd>
+</dl>
+</li>
+</ul>
+<a name="sendMessage-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sendMessage</h4>
+<pre>public&nbsp;void&nbsp;sendMessage(java.lang.String&nbsp;message)</pre>
+<div class="block">发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a> 或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseDialogFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a>接收消息事件，
  也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--"><code>getMessageEvent()</code></a>接收消息事件</div>
@@ -654,20 +631,23 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 </dl>
 </li>
 </ul>
-<a name="postMessage-int-">
+<a name="sendMessage-java.lang.String-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>postMessage</h4>
-<pre>public&nbsp;void&nbsp;postMessage(int&nbsp;msgId)</pre>
-<div class="block">同步异步发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
+<h4>sendMessage</h4>
+<pre>public&nbsp;void&nbsp;sendMessage(java.lang.String&nbsp;message,
+                        boolean&nbsp;post)</pre>
+<div class="block">发送消息，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseActivity.registerMessageEvent(MessageEvent.MessageObserver)</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a> 或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerMessageEvent-com.king.frame.mvvmframe.base.livedata.MessageEvent.MessageObserver-"><code>BaseDialogFragment.registerMessageEvent(MessageEvent.MessageObserver)</code></a>接收消息事件，
  也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getMessageEvent--"><code>getMessageEvent()</code></a>接收消息事件</div>
 <dl>
 <dt><span class="paramLabel">参数:</span></dt>
-<dd><code>msgId</code> - 资源文件id</dd>
+<dd><code>message</code> - 消息内容</dd>
+<dd><code>post</code> - 如果为<code>true</code>则可以在子线程调用，相当于调用<code>MutableLiveData#postValue(Object)</code>，
+             如果为<code>false</code> 相当于调用<code>MutableLiveData#setValue(Object)</code></dd>
 </dl>
 </li>
 </ul>
@@ -678,7 +658,7 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 <li class="blockList">
 <h4>updateStatus</h4>
 <pre>public&nbsp;void&nbsp;updateStatus(int&nbsp;status)</pre>
-<div class="block">同步更新状态，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseActivity.registerStatusEvent(StatusEvent.StatusObserver)</code></a>或
+<div class="block">更新状态，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseActivity.registerStatusEvent(StatusEvent.StatusObserver)</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseFragment.registerStatusEvent(StatusEvent.StatusObserver)</code></a> 或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseDialogFragment.registerStatusEvent(StatusEvent.StatusObserver)</code></a>接收消息事件，
  也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getStatusEvent--"><code>getStatusEvent()</code></a>接收消息事件</div>
@@ -688,38 +668,23 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 </dl>
 </li>
 </ul>
-<a name="postUpdateStatus-int-">
+<a name="updateStatus-int-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>postUpdateStatus</h4>
-<pre>public&nbsp;void&nbsp;postUpdateStatus(int&nbsp;status)</pre>
-<div class="block">异步更新状态，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseActivity.registerStatusEvent(StatusEvent.StatusObserver)</code></a>或
+<h4>updateStatus</h4>
+<pre>public&nbsp;void&nbsp;updateStatus(int&nbsp;status,
+                         boolean&nbsp;post)</pre>
+<div class="block">更新状态，通过注册<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseActivity.registerStatusEvent(StatusEvent.StatusObserver)</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseFragment.registerStatusEvent(StatusEvent.StatusObserver)</code></a> 或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#registerStatusEvent-com.king.frame.mvvmframe.base.livedata.StatusEvent.StatusObserver-"><code>BaseDialogFragment.registerStatusEvent(StatusEvent.StatusObserver)</code></a>接收消息事件，
  也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getStatusEvent--"><code>getStatusEvent()</code></a>接收消息事件</div>
 <dl>
 <dt><span class="paramLabel">参数:</span></dt>
 <dd><code>status</code> - </dd>
-</dl>
-</li>
-</ul>
-<a name="sendSingleLiveEvent-android.os.Message-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sendSingleLiveEvent</h4>
-<pre>public&nbsp;void&nbsp;sendSingleLiveEvent(android.os.Message&nbsp;message)</pre>
-<div class="block">同步发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
- 通过注册<code>BaseActivity#registerSingleLiveEvent(Observer)</code>或
- <code>BaseFragment#registerSingleLiveEvent(Observer)</code> 或
- <code>BaseDialogFragment#registerSingleLiveEvent(Observer)</code>接收消息事件，
- 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getSingleLiveEvent--"><code>getSingleLiveEvent()</code></a>接收消息事件</div>
-<dl>
-<dt><span class="paramLabel">参数:</span></dt>
-<dd><code>message</code> - </dd>
+<dd><code>post</code> - 如果为<code>true</code>则可以在子线程调用，相当于调用<code>MutableLiveData#postValue(Object)</code>，
+             如果为<code>false</code> 相当于调用<code>MutableLiveData#setValue(Object)</code></dd>
 </dl>
 </li>
 </ul>
@@ -730,7 +695,7 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 <li class="blockList">
 <h4>sendSingleLiveEvent</h4>
 <pre>public&nbsp;void&nbsp;sendSingleLiveEvent(int&nbsp;what)</pre>
-<div class="block">同步发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
+<div class="block">发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
  通过注册<code>BaseActivity#registerSingleLiveEvent(Observer)</code>或
  <code>BaseFragment#registerSingleLiveEvent(Observer)</code> 或
  <code>BaseDialogFragment#registerSingleLiveEvent(Observer)</code>接收消息事件，
@@ -741,14 +706,35 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 </dl>
 </li>
 </ul>
-<a name="postSingleLiveEvent-android.os.Message-">
+<a name="sendSingleLiveEvent-int-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>postSingleLiveEvent</h4>
-<pre>public&nbsp;void&nbsp;postSingleLiveEvent(android.os.Message&nbsp;message)</pre>
-<div class="block">异步发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
+<h4>sendSingleLiveEvent</h4>
+<pre>public&nbsp;void&nbsp;sendSingleLiveEvent(int&nbsp;what,
+                                boolean&nbsp;post)</pre>
+<div class="block">发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
+ 通过注册<code>BaseActivity#registerSingleLiveEvent(Observer)</code>或
+ <code>BaseFragment#registerSingleLiveEvent(Observer)</code> 或
+ <code>BaseDialogFragment#registerSingleLiveEvent(Observer)</code>接收消息事件，
+ 也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getSingleLiveEvent--"><code>getSingleLiveEvent()</code></a>接收消息事件</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>what</code> - </dd>
+<dd><code>post</code> - 如果为<code>true</code>则可以在子线程调用，相当于调用<code>MutableLiveData#postValue(Object)</code>，
+             如果为<code>false</code> 相当于调用<code>MutableLiveData#setValue(Object)</code></dd>
+</dl>
+</li>
+</ul>
+<a name="sendSingleLiveEvent-android.os.Message-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sendSingleLiveEvent</h4>
+<pre>public&nbsp;void&nbsp;sendSingleLiveEvent(android.os.Message&nbsp;message)</pre>
+<div class="block">发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
  通过注册<code>BaseActivity#registerSingleLiveEvent(Observer)</code>或
  <code>BaseFragment#registerSingleLiveEvent(Observer)</code> 或
  <code>BaseDialogFragment#registerSingleLiveEvent(Observer)</code>接收消息事件，
@@ -759,21 +745,24 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 </dl>
 </li>
 </ul>
-<a name="postSingleLiveEvent-int-">
+<a name="sendSingleLiveEvent-android.os.Message-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>postSingleLiveEvent</h4>
-<pre>public&nbsp;void&nbsp;postSingleLiveEvent(int&nbsp;what)</pre>
-<div class="block">异步发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
+<h4>sendSingleLiveEvent</h4>
+<pre>public&nbsp;void&nbsp;sendSingleLiveEvent(android.os.Message&nbsp;message,
+                                boolean&nbsp;post)</pre>
+<div class="block">发送单个消息事件，消息为<code>Message</code>对象，可通过<code>Message.what</code>区分消息类型，用法与<code>Message</code>一致，
  通过注册<code>BaseActivity#registerSingleLiveEvent(Observer)</code>或
  <code>BaseFragment#registerSingleLiveEvent(Observer)</code> 或
  <code>BaseDialogFragment#registerSingleLiveEvent(Observer)</code>接收消息事件，
  也可通过观察<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html#getSingleLiveEvent--"><code>getSingleLiveEvent()</code></a>接收消息事件</div>
 <dl>
 <dt><span class="paramLabel">参数:</span></dt>
-<dd><code>what</code> - </dd>
+<dd><code>message</code> - </dd>
+<dd><code>post</code> - 如果为<code>true</code>则可以在子线程调用，相当于调用<code>MutableLiveData#postValue(Object)</code>，
+             如果为<code>false</code> 相当于调用<code>MutableLiveData#setValue(Object)</code></dd>
 </dl>
 </li>
 </ul>
@@ -786,10 +775,17 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 <pre>public&nbsp;void&nbsp;showLoading()</pre>
 <div class="block">调用此类会同步通知执行<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#showLoading--"><code>BaseActivity.showLoading()</code></a>或<a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#showLoading--"><code>BaseFragment.showLoading()</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#showLoading--"><code>BaseDialogFragment.showLoading()</code></a></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">指定者:</span></dt>
-<dd><code><a href="../../../../../com/king/frame/mvvmframe/base/ILoading.html#showLoading--">showLoading</a></code>&nbsp;在接口中&nbsp;<code><a href="../../../../../com/king/frame/mvvmframe/base/ILoading.html" title="com.king.frame.mvvmframe.base中的接口">ILoading</a></code></dd>
-</dl>
+</li>
+</ul>
+<a name="showLoading-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>showLoading</h4>
+<pre>public&nbsp;void&nbsp;showLoading(boolean&nbsp;post)</pre>
+<div class="block">调用此类会同步通知执行<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#showLoading--"><code>BaseActivity.showLoading()</code></a>或<a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#showLoading--"><code>BaseFragment.showLoading()</code></a>或
+ <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#showLoading--"><code>BaseDialogFragment.showLoading()</code></a></div>
 </li>
 </ul>
 <a name="hideLoading--">
@@ -801,32 +797,22 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 <pre>public&nbsp;void&nbsp;hideLoading()</pre>
 <div class="block">调用此类会同步通知执行<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#hideLoading--"><code>BaseActivity.hideLoading()</code></a>或<a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#hideLoading--"><code>BaseFragment.hideLoading()</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#hideLoading--"><code>BaseDialogFragment.hideLoading()</code></a></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">指定者:</span></dt>
-<dd><code><a href="../../../../../com/king/frame/mvvmframe/base/ILoading.html#hideLoading--">hideLoading</a></code>&nbsp;在接口中&nbsp;<code><a href="../../../../../com/king/frame/mvvmframe/base/ILoading.html" title="com.king.frame.mvvmframe.base中的接口">ILoading</a></code></dd>
-</dl>
 </li>
 </ul>
-<a name="postShowLoading--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>postShowLoading</h4>
-<pre>public&nbsp;void&nbsp;postShowLoading()</pre>
-<div class="block">调用此类会异步通知执行<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#showLoading--"><code>BaseActivity.showLoading()</code></a>或<a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#showLoading--"><code>BaseFragment.showLoading()</code></a>或
- <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#showLoading--"><code>BaseDialogFragment.showLoading()</code></a></div>
-</li>
-</ul>
-<a name="postHideLoading--">
+<a name="hideLoading-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>postHideLoading</h4>
-<pre>public&nbsp;void&nbsp;postHideLoading()</pre>
-<div class="block">调用此类会异步通知执行<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#hideLoading--"><code>BaseActivity.hideLoading()</code></a>或<a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#hideLoading--"><code>BaseFragment.hideLoading()</code></a>或
+<h4>hideLoading</h4>
+<pre>public&nbsp;void&nbsp;hideLoading(boolean&nbsp;post)</pre>
+<div class="block">调用此类会同步通知执行<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html#hideLoading--"><code>BaseActivity.hideLoading()</code></a>或<a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html#hideLoading--"><code>BaseFragment.hideLoading()</code></a>或
  <a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html#hideLoading--"><code>BaseDialogFragment.hideLoading()</code></a></div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>post</code> - 如果为<code>true</code>则可以在子线程调用，相当于调用<code>MutableLiveData#postValue(Object)</code>，
+             如果为<code>false</code> 相当于调用<code>MutableLiveData#setValue(Object)</code></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -882,13 +868,13 @@ protected&nbsp;<a href="../../../../../com/king/frame/mvvmframe/base/BaseViewMod
 <ul class="subNavList">
 <li>概要:&nbsp;</li>
 <li>嵌套&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">字段</a>&nbsp;|&nbsp;</li>
+<li>字段&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">构造器</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">方法</a></li>
 </ul>
 <ul class="subNavList">
 <li>详细资料:&nbsp;</li>
-<li><a href="#field.detail">字段</a>&nbsp;|&nbsp;</li>
+<li>字段&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">构造器</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">方法</a></li>
 </ul>

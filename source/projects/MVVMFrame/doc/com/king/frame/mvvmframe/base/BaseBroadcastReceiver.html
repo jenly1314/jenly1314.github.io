@@ -18,12 +18,6 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
-var tabs = {65535:["t0","所有方法"],2:["t2","实例方法"],8:["t4","具体方法"]};
-var altColor = "altColor";
-var rowColor = "rowColor";
-var tableTab = "tableTab";
-var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>您的浏览器已禁用 JavaScript。</div>
@@ -48,7 +42,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../com/king/frame/mvvmframe/base/BaseApplication.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">上一个类</span></a></li>
+<li><a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">上一个类</span></a></li>
 <li><a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">下一个类</span></a></li>
 </ul>
 <ul class="navList">
@@ -76,13 +70,13 @@ var activeTableTab = "activeTableTab";
 <li><a href="#nested.classes.inherited.from.class.android.content.BroadcastReceiver">嵌套</a>&nbsp;|&nbsp;</li>
 <li>字段&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">构造器</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">方法</a></li>
+<li><a href="#methods.inherited.from.class.android.content.BroadcastReceiver">方法</a></li>
 </ul>
 <ul class="subNavList">
 <li>详细资料:&nbsp;</li>
 <li>字段&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">构造器</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">方法</a></li>
+<li>方法</li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -113,8 +107,11 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">BaseBroadcastReceiver</span>
+<pre>public abstract class <span class="typeNameLabel">BaseBroadcastReceiver</span>
 extends android.content.BroadcastReceiver</pre>
+<div class="block">MVVMFrame 框架基于Google官方的 JetPack 构建，在使用MVVMFrame时，需遵循一些规范：
+
+ 如果您继承使用了BaseBroadcastReceiver或其子类，你需要参照如下方式添加@AndroidEntryPoint注解</div>
 </li>
 </ul>
 </div>
@@ -159,24 +156,12 @@ extends android.content.BroadcastReceiver</pre>
 <!--   -->
 </a>
 <h3>方法概要</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="方法概要表, 列表方法和解释">
-<caption><span id="t0" class="activeTableTab"><span>所有方法</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">实例方法</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">具体方法</a></span><span class="tabEnd">&nbsp;</span></span></caption>
-<tr>
-<th class="colFirst" scope="col">限定符和类型</th>
-<th class="colLast" scope="col">方法和说明</th>
-</tr>
-<tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/king/frame/mvvmframe/base/BaseBroadcastReceiver.html#onReceive-android.content.Context-android.content.Intent-">onReceive</a></span>(android.content.Context&nbsp;context,
-         android.content.Intent&nbsp;intent)</code>&nbsp;</td>
-</tr>
-</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.android.content.BroadcastReceiver">
 <!--   -->
 </a>
 <h3>从类继承的方法&nbsp;android.content.BroadcastReceiver</h3>
-<code>abortBroadcast, clearAbortBroadcast, getAbortBroadcast, getDebugUnregister, getResultCode, getResultData, getResultExtras, goAsync, isInitialStickyBroadcast, isOrderedBroadcast, peekService, setDebugUnregister, setOrderedHint, setResult, setResultCode, setResultData, setResultExtras</code></li>
+<code>abortBroadcast, clearAbortBroadcast, getAbortBroadcast, getDebugUnregister, getResultCode, getResultData, getResultExtras, goAsync, isInitialStickyBroadcast, isOrderedBroadcast, onReceive, peekService, setDebugUnregister, setOrderedHint, setResult, setResultCode, setResultData, setResultExtras</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -210,28 +195,6 @@ extends android.content.BroadcastReceiver</pre>
 </ul>
 </li>
 </ul>
-<!-- ============ METHOD DETAIL ========== -->
-<ul class="blockList">
-<li class="blockList"><a name="method.detail">
-<!--   -->
-</a>
-<h3>方法详细资料</h3>
-<a name="onReceive-android.content.Context-android.content.Intent-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>onReceive</h4>
-<pre>public&nbsp;void&nbsp;onReceive(android.content.Context&nbsp;context,
-                      android.content.Intent&nbsp;intent)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">指定者:</span></dt>
-<dd><code>onReceive</code>&nbsp;在类中&nbsp;<code>android.content.BroadcastReceiver</code></dd>
-</dl>
-</li>
-</ul>
-</li>
-</ul>
 </li>
 </ul>
 </div>
@@ -257,7 +220,7 @@ extends android.content.BroadcastReceiver</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../com/king/frame/mvvmframe/base/BaseApplication.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">上一个类</span></a></li>
+<li><a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">上一个类</span></a></li>
 <li><a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">下一个类</span></a></li>
 </ul>
 <ul class="navList">
@@ -285,13 +248,13 @@ extends android.content.BroadcastReceiver</pre>
 <li><a href="#nested.classes.inherited.from.class.android.content.BroadcastReceiver">嵌套</a>&nbsp;|&nbsp;</li>
 <li>字段&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">构造器</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">方法</a></li>
+<li><a href="#methods.inherited.from.class.android.content.BroadcastReceiver">方法</a></li>
 </ul>
 <ul class="subNavList">
 <li>详细资料:&nbsp;</li>
 <li>字段&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">构造器</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">方法</a></li>
+<li>方法</li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

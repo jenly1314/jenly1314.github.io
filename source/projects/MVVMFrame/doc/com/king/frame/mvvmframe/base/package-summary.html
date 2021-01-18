@@ -43,7 +43,7 @@
 <div class="subNav">
 <ul class="navList">
 <li>上一个程序包</li>
-<li><a href="../../../../../com/king/frame/mvvmframe/base/delegate/package-summary.html">下一个程序包</a></li>
+<li><a href="../../../../../com/king/frame/mvvmframe/base/livedata/package-summary.html">下一个程序包</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?com/king/frame/mvvmframe/base/package-summary.html" target="_top">框架</a></li>
@@ -86,26 +86,20 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/IAppComponent.html" title="com.king.frame.mvvmframe.base中的接口">IAppComponent</a></td>
-<td class="colLast">
-<div class="block">暴露<a href="../../../../../com/king/frame/mvvmframe/di/component/AppComponent.html" title="com.king.frame.mvvmframe.di.component中的接口"><code>AppComponent</code></a>，实现类见<a href="../../../../../com/king/frame/mvvmframe/base/delegate/ApplicationDelegate.html" title="com.king.frame.mvvmframe.base.delegate中的类"><code>ApplicationDelegate</code></a></div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/ILoading.html" title="com.king.frame.mvvmframe.base中的接口">ILoading</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/IModel.html" title="com.king.frame.mvvmframe.base中的接口">IModel</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/IView.html" title="com.king.frame.mvvmframe.base中的接口">IView</a>&lt;VM extends ViewModel&gt;</td>
 <td class="colLast">
 <div class="block">用来规范<a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html" title="com.king.frame.mvvmframe.base中的类"><code>BaseActivity</code></a> 和<a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html" title="com.king.frame.mvvmframe.base中的类"><code>BaseFragment</code></a> 风格。</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/IViewModel.html" title="com.king.frame.mvvmframe.base中的接口">IViewModel</a></td>
 <td class="colLast">
 <div class="block">继承LifecycleObserver提供生命周期感知能力</div>
@@ -124,75 +118,91 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseActivity.html" title="com.king.frame.mvvmframe.base中的类">BaseActivity</a>&lt;VM extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类">BaseViewModel</a>,VDB extends ViewDataBinding&gt;</td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">MVVMFrame 框架基于Google官方的 JetPack 构建，在使用MVVMFrame时，需遵循一些规范：
+
+ 如果您继承使用了BaseActivity或其子类，你需要参照如下方式添加@AndroidEntryPoint注解</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseApplication.html" title="com.king.frame.mvvmframe.base中的类">BaseApplication</a></td>
+<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseBroadcastReceiver.html" title="com.king.frame.mvvmframe.base中的类">BaseBroadcastReceiver</a></td>
 <td class="colLast">
-<div class="block">MVVMFrame 框架基于Google官方的Architecture Components dependencies 构建，在使用MVVMFrame时，需遵循一些规范：
-  1.你的项目中的Application中需初始化MVVMFrame框架相关信息，有两种方式处理：
-      a.直接继承本类<a href="../../../../../com/king/frame/mvvmframe/base/BaseApplication.html" title="com.king.frame.mvvmframe.base中的类"><code>BaseApplication</code></a>即可；
-      b.如你的项目中的Application本身继承了其它第三方的Application，因为Java是单继承原因，导致没法继承本类，可参照<a href="../../../../../com/king/frame/mvvmframe/base/BaseApplication.html" title="com.king.frame.mvvmframe.base中的类"><code>BaseApplication</code></a>类，
-      将<a href="../../../../../com/king/frame/mvvmframe/base/BaseApplication.html" title="com.king.frame.mvvmframe.base中的类"><code>BaseApplication</code></a>中相关代码复制到你项目的Application中，在相应的生命周期中调用即可。</div>
+<div class="block">MVVMFrame 框架基于Google官方的 JetPack 构建，在使用MVVMFrame时，需遵循一些规范：
+
+ 如果您继承使用了BaseBroadcastReceiver或其子类，你需要参照如下方式添加@AndroidEntryPoint注解</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseBroadcastReceiver.html" title="com.king.frame.mvvmframe.base中的类">BaseBroadcastReceiver</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseDialogFragment.html" title="com.king.frame.mvvmframe.base中的类">BaseDialogFragment</a>&lt;VM extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类">BaseViewModel</a>,VDB extends ViewDataBinding&gt;</td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html" title="com.king.frame.mvvmframe.base中的类">BaseFragment</a>&lt;VM extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类">BaseViewModel</a>,VDB extends ViewDataBinding&gt;</td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">MVVMFrame 框架基于Google官方的 JetPack 构建，在使用MVVMFrame时，需遵循一些规范：
+
+ 如果您继承使用了BaseDialogFragment或其子类，你需要参照如下方式添加@AndroidEntryPoint注解</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseIntentService.html" title="com.king.frame.mvvmframe.base中的类">BaseIntentService</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseFragment.html" title="com.king.frame.mvvmframe.base中的类">BaseFragment</a>&lt;VM extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类">BaseViewModel</a>,VDB extends ViewDataBinding&gt;</td>
+<td class="colLast">
+<div class="block">MVVMFrame 框架基于Google官方的 JetPack 构建，在使用MVVMFrame时，需遵循一些规范：
+
+ 如果您继承使用了BaseFragment或其子类，你需要参照如下方式添加@AndroidEntryPoint注解</div>
+</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseIntentService.html" title="com.king.frame.mvvmframe.base中的类">BaseIntentService</a></td>
+<td class="colLast">
+<div class="block">MVVMFrame 框架基于Google官方的 JetPack 构建，在使用MVVMFrame时，需遵循一些规范：
+
+ 如果您继承使用了BaseIntentService或其子类，你需要参照如下方式添加@AndroidEntryPoint注解</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseLazyFragment.html" title="com.king.frame.mvvmframe.base中的类">BaseLazyFragment</a>&lt;VM extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类">BaseViewModel</a>,VDB extends ViewDataBinding&gt;</td>
 <td class="colLast">
 <div class="block">懒加载Fragment</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseModel.html" title="com.king.frame.mvvmframe.base中的类">BaseModel</a></td>
 <td class="colLast">
-<div class="block">标准MVVM模式中的M (Model)层基类</div>
+<div class="block">MVVMFrame 框架基于Google官方的 JetPack 构建，在使用MVVMFrame时，需遵循一些规范：
+
+ 如果您继承使用了BaseModel或其子类，你需要参照如下方式在构造函数上添加@Inject注解</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseProgressDialog.html" title="com.king.frame.mvvmframe.base中的类">BaseProgressDialog</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseService.html" title="com.king.frame.mvvmframe.base中的类">BaseService</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类">BaseViewModel</a>&lt;M extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseModel.html" title="com.king.frame.mvvmframe.base中的类">BaseModel</a>&gt;</td>
+<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseService.html" title="com.king.frame.mvvmframe.base中的类">BaseService</a></td>
 <td class="colLast">
-<div class="block">标准MVVM模式中的VM (ViewModel)层基类</div>
+<div class="block">MVVMFrame 框架基于Google官方的 JetPack 构建，在使用MVVMFrame时，需遵循一些规范：
+
+ 如果您继承使用了BaseService或其子类，你需要参照如下方式添加@AndroidEntryPoint注解</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类">BaseViewModel</a>&lt;M extends <a href="../../../../../com/king/frame/mvvmframe/base/BaseModel.html" title="com.king.frame.mvvmframe.base中的类">BaseModel</a>&gt;</td>
+<td class="colLast">
+<div class="block">MVVMFrame 框架基于Google官方的 JetPack 构建，在使用MVVMFrame时，需遵循一些规范：
+
+ 如果您继承使用了BaseViewModel或其子类，你需要参照如下方式在构造函数上添加@ViewModelInject注解</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/ContentActivity.html" title="com.king.frame.mvvmframe.base中的类">ContentActivity</a></td>
 <td class="colLast">
 <div class="block">用于容纳Fragment的通用Activity，相当于一个Fragment容器，通过<code>Intent</code> 传递参数和标识，然后实现<a href="../../../../../com/king/frame/mvvmframe/base/ContentActivity.html#switchFragment-android.content.Intent-"><code>ContentActivity.switchFragment(android.content.Intent)</code></a>处理对应的逻辑</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/DataViewModel.html" title="com.king.frame.mvvmframe.base中的类">DataViewModel</a></td>
 <td class="colLast">
-<div class="block">默认提供<a href="../../../../../com/king/frame/mvvmframe/base/BaseModel.html#getRetrofitService-java.lang.Class-"><code>BaseModel.getRetrofitService(java.lang.Class&lt;T&gt;)</code></a>的功能，当ViewModel和Model数据比较简单时可使用本类，弱化Model层。</div>
+<div class="block">MVVMFrame 框架基于Google官方的 JetPack 构建，在使用MVVMFrame时，需遵循一些规范：
+
+ 如果您继承使用了DataViewModel或其子类，你需要参照如下方式在构造函数上添加@ViewModelInject注解</div>
 </td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../../../com/king/frame/mvvmframe/base/ViewModelFactory.html" title="com.king.frame.mvvmframe.base中的类">ViewModelFactory</a></td>
-<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -220,7 +230,7 @@
 <div class="subNav">
 <ul class="navList">
 <li>上一个程序包</li>
-<li><a href="../../../../../com/king/frame/mvvmframe/base/delegate/package-summary.html">下一个程序包</a></li>
+<li><a href="../../../../../com/king/frame/mvvmframe/base/livedata/package-summary.html">下一个程序包</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?com/king/frame/mvvmframe/base/package-summary.html" target="_top">框架</a></li>

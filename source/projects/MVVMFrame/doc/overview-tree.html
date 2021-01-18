@@ -73,15 +73,11 @@
 <span class="packageHierarchyLabel">程序包分层结构:</span>
 <ul class="horizontal">
 <li><a href="com/king/frame/mvvmframe/base/package-tree.html">com.king.frame.mvvmframe.base</a>, </li>
-<li><a href="com/king/frame/mvvmframe/base/delegate/package-tree.html">com.king.frame.mvvmframe.base.delegate</a>, </li>
-<li><a href="com/king/frame/mvvmframe/base/lifecycle/package-tree.html">com.king.frame.mvvmframe.base.lifecycle</a>, </li>
 <li><a href="com/king/frame/mvvmframe/base/livedata/package-tree.html">com.king.frame.mvvmframe.base.livedata</a>, </li>
 <li><a href="com/king/frame/mvvmframe/bean/package-tree.html">com.king.frame.mvvmframe.bean</a>, </li>
 <li><a href="com/king/frame/mvvmframe/config/package-tree.html">com.king.frame.mvvmframe.config</a>, </li>
 <li><a href="com/king/frame/mvvmframe/data/package-tree.html">com.king.frame.mvvmframe.data</a>, </li>
-<li><a href="com/king/frame/mvvmframe/di/component/package-tree.html">com.king.frame.mvvmframe.di.component</a>, </li>
 <li><a href="com/king/frame/mvvmframe/di/module/package-tree.html">com.king.frame.mvvmframe.di.module</a>, </li>
-<li><a href="com/king/frame/mvvmframe/di/scope/package-tree.html">com.king.frame.mvvmframe.di.scope</a>, </li>
 <li><a href="com/king/frame/mvvmframe/http/package-tree.html">com.king.frame.mvvmframe.http</a>, </li>
 <li><a href="com/king/frame/mvvmframe/http/callback/package-tree.html">com.king.frame.mvvmframe.http.callback</a>, </li>
 <li><a href="com/king/frame/mvvmframe/http/interceptor/package-tree.html">com.king.frame.mvvmframe.http.interceptor</a>, </li>
@@ -105,7 +101,7 @@
 </li>
 <li type="circle">AndroidViewModel
 <ul>
-<li type="circle">com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">BaseViewModel</span></a>&lt;M&gt; (implements com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/ILoading.html" title="com.king.frame.mvvmframe.base中的接口">ILoading</a>, com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/IViewModel.html" title="com.king.frame.mvvmframe.base中的接口">IViewModel</a>)
+<li type="circle">com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/BaseViewModel.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">BaseViewModel</span></a>&lt;M&gt; (implements com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/IViewModel.html" title="com.king.frame.mvvmframe.base中的接口">IViewModel</a>)
 <ul>
 <li type="circle">com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/DataViewModel.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">DataViewModel</span></a></li>
 </ul>
@@ -122,8 +118,6 @@
 </li>
 </ul>
 </li>
-<li type="circle">com.king.frame.mvvmframe.base.delegate.<a href="com/king/frame/mvvmframe/base/delegate/ApplicationDelegate.html" title="com.king.frame.mvvmframe.base.delegate中的类"><span class="typeNameLink">ApplicationDelegate</span></a> (implements com.king.frame.mvvmframe.base.lifecycle.<a href="com/king/frame/mvvmframe/base/lifecycle/ApplicationLifecycle.html" title="com.king.frame.mvvmframe.base.lifecycle中的接口">ApplicationLifecycle</a>, com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/IAppComponent.html" title="com.king.frame.mvvmframe.base中的接口">IAppComponent</a>)</li>
-<li type="circle">com.king.frame.mvvmframe.di.module.<a href="com/king/frame/mvvmframe/di/module/AppModule.html" title="com.king.frame.mvvmframe.di.module中的类"><span class="typeNameLink">AppModule</span></a></li>
 <li type="circle">com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/BaseModel.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">BaseModel</span></a> (implements com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/IModel.html" title="com.king.frame.mvvmframe.base中的接口">IModel</a>)</li>
 <li type="circle">android.content.BroadcastReceiver
 <ul>
@@ -137,11 +131,6 @@
 <ul>
 <li type="circle">android.content.ContextWrapper
 <ul>
-<li type="circle">android.app.Application (implements android.content.ComponentCallbacks2)
-<ul>
-<li type="circle">com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/BaseApplication.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">BaseApplication</span></a> (implements com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/IAppComponent.html" title="com.king.frame.mvvmframe.base中的接口">IAppComponent</a>)</li>
-</ul>
-</li>
 <li type="circle">android.app.Service (implements android.content.ComponentCallbacks2)
 <ul>
 <li type="circle">com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/BaseService.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">BaseService</span></a></li>
@@ -183,30 +172,19 @@
 <li type="circle">com.king.frame.mvvmframe.http.interceptor.<a href="com/king/frame/mvvmframe/http/interceptor/LogInterceptor.html" title="com.king.frame.mvvmframe.http.interceptor中的类"><span class="typeNameLink">LogInterceptor</span></a></li>
 <li type="circle">com.king.frame.mvvmframe.config.<a href="com/king/frame/mvvmframe/config/ManifestParser.html" title="com.king.frame.mvvmframe.config中的类"><span class="typeNameLink">ManifestParser</span></a></li>
 <li type="circle">com.king.frame.mvvmframe.util.<a href="com/king/frame/mvvmframe/util/Preconditions.html" title="com.king.frame.mvvmframe.util中的类"><span class="typeNameLink">Preconditions</span></a></li>
+<li type="circle">com.king.frame.mvvmframe.di.module.<a href="com/king/frame/mvvmframe/di/module/RepositoryModule.html" title="com.king.frame.mvvmframe.di.module中的类"><span class="typeNameLink">RepositoryModule</span></a></li>
 <li type="circle">com.king.frame.mvvmframe.bean.<a href="com/king/frame/mvvmframe/bean/Resource.html" title="com.king.frame.mvvmframe.bean中的类"><span class="typeNameLink">Resource</span></a>&lt;T&gt;</li>
-<li type="circle">com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/ViewModelFactory.html" title="com.king.frame.mvvmframe.base中的类"><span class="typeNameLink">ViewModelFactory</span></a></li>
-<li type="circle">com.king.frame.mvvmframe.di.module.<a href="com/king/frame/mvvmframe/di/module/ViewModelFactoryModule.html" title="com.king.frame.mvvmframe.di.module中的类"><span class="typeNameLink">ViewModelFactoryModule</span></a></li>
 </ul>
 </li>
 </ul>
 <h2 title="接口分层结构">接口分层结构</h2>
 <ul>
-<li type="circle">com.king.frame.mvvmframe.di.component.<a href="com/king/frame/mvvmframe/di/component/AppComponent.html" title="com.king.frame.mvvmframe.di.component中的接口"><span class="typeNameLink">AppComponent</span></a></li>
-<li type="circle">com.king.frame.mvvmframe.di.component.<a href="com/king/frame/mvvmframe/di/component/AppComponent.Builder.html" title="com.king.frame.mvvmframe.di.component中的接口"><span class="typeNameLink">AppComponent.Builder</span></a></li>
-<li type="circle">com.king.frame.mvvmframe.base.lifecycle.<a href="com/king/frame/mvvmframe/base/lifecycle/ApplicationLifecycle.html" title="com.king.frame.mvvmframe.base.lifecycle中的接口"><span class="typeNameLink">ApplicationLifecycle</span></a></li>
 <li type="circle">com.king.frame.mvvmframe.config.<a href="com/king/frame/mvvmframe/config/AppliesOptions.html" title="com.king.frame.mvvmframe.config中的接口"><span class="typeNameLink">AppliesOptions</span></a></li>
 <li type="circle">com.king.frame.mvvmframe.config.<a href="com/king/frame/mvvmframe/config/AppliesOptions.GsonOptions.html" title="com.king.frame.mvvmframe.config中的接口"><span class="typeNameLink">AppliesOptions.GsonOptions</span></a></li>
 <li type="circle">com.king.frame.mvvmframe.config.<a href="com/king/frame/mvvmframe/config/AppliesOptions.InterceptorConfigOptions.html" title="com.king.frame.mvvmframe.config中的接口"><span class="typeNameLink">AppliesOptions.InterceptorConfigOptions</span></a></li>
 <li type="circle">com.king.frame.mvvmframe.config.<a href="com/king/frame/mvvmframe/config/AppliesOptions.OkHttpClientOptions.html" title="com.king.frame.mvvmframe.config中的接口"><span class="typeNameLink">AppliesOptions.OkHttpClientOptions</span></a></li>
 <li type="circle">com.king.frame.mvvmframe.config.<a href="com/king/frame/mvvmframe/config/AppliesOptions.RetrofitOptions.html" title="com.king.frame.mvvmframe.config中的接口"><span class="typeNameLink">AppliesOptions.RetrofitOptions</span></a></li>
 <li type="circle">com.king.frame.mvvmframe.config.<a href="com/king/frame/mvvmframe/config/AppliesOptions.RoomDatabaseOptions.html" title="com.king.frame.mvvmframe.config中的接口"><span class="typeNameLink">AppliesOptions.RoomDatabaseOptions</span></a>&lt;T&gt;</li>
-<li type="circle">com.king.frame.mvvmframe.di.component.<a href="com/king/frame/mvvmframe/di/component/BaseActivitySubcomponent.html" title="com.king.frame.mvvmframe.di.component中的接口"><span class="typeNameLink">BaseActivitySubcomponent</span></a></li>
-<li type="circle">com.king.frame.mvvmframe.di.component.<a href="com/king/frame/mvvmframe/di/component/BaseActivitySubcomponent.Factory.html" title="com.king.frame.mvvmframe.di.component中的接口"><span class="typeNameLink">BaseActivitySubcomponent.Factory</span></a></li>
-<li type="circle">com.king.frame.mvvmframe.di.component.<a href="com/king/frame/mvvmframe/di/component/BaseDialogFragmentSubcomponent.html" title="com.king.frame.mvvmframe.di.component中的接口"><span class="typeNameLink">BaseDialogFragmentSubcomponent</span></a></li>
-<li type="circle">com.king.frame.mvvmframe.di.component.<a href="com/king/frame/mvvmframe/di/component/BaseDialogFragmentSubcomponent.Factory.html" title="com.king.frame.mvvmframe.di.component中的接口"><span class="typeNameLink">BaseDialogFragmentSubcomponent.Factory</span></a></li>
-<li type="circle">com.king.frame.mvvmframe.di.component.<a href="com/king/frame/mvvmframe/di/component/BaseFragmentSubcomponent.html" title="com.king.frame.mvvmframe.di.component中的接口"><span class="typeNameLink">BaseFragmentSubcomponent</span></a></li>
-<li type="circle">com.king.frame.mvvmframe.di.component.<a href="com/king/frame/mvvmframe/di/component/BaseFragmentSubcomponent.Factory.html" title="com.king.frame.mvvmframe.di.component中的接口"><span class="typeNameLink">BaseFragmentSubcomponent.Factory</span></a></li>
-<li type="circle">com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/IAppComponent.html" title="com.king.frame.mvvmframe.base中的接口"><span class="typeNameLink">IAppComponent</span></a></li>
 <li type="circle">com.king.frame.mvvmframe.data.<a href="com/king/frame/mvvmframe/data/IDataRepository.html" title="com.king.frame.mvvmframe.data中的接口"><span class="typeNameLink">IDataRepository</span></a></li>
 <li type="circle">com.king.frame.mvvmframe.base.<a href="com/king/frame/mvvmframe/base/ILoading.html" title="com.king.frame.mvvmframe.base中的接口"><span class="typeNameLink">ILoading</span></a>
 <ul>
@@ -222,10 +200,6 @@
 <h2 title="注释类型分层结构">注释类型分层结构</h2>
 <ul>
 <li type="circle">com.king.frame.mvvmframe.base.livedata.<a href="com/king/frame/mvvmframe/base/livedata/StatusEvent.Status.html" title="com.king.frame.mvvmframe.base.livedata中的注释"><span class="typeNameLink">StatusEvent.Status</span></a> (implements java.lang.annotation.Annotation)</li>
-<li type="circle">com.king.frame.mvvmframe.di.scope.<a href="com/king/frame/mvvmframe/di/scope/ActivityScope.html" title="com.king.frame.mvvmframe.di.scope中的注释"><span class="typeNameLink">ActivityScope</span></a> (implements java.lang.annotation.Annotation)</li>
-<li type="circle">com.king.frame.mvvmframe.di.scope.<a href="com/king/frame/mvvmframe/di/scope/ApplicationScope.html" title="com.king.frame.mvvmframe.di.scope中的注释"><span class="typeNameLink">ApplicationScope</span></a> (implements java.lang.annotation.Annotation)</li>
-<li type="circle">com.king.frame.mvvmframe.di.scope.<a href="com/king/frame/mvvmframe/di/scope/FragmentScope.html" title="com.king.frame.mvvmframe.di.scope中的注释"><span class="typeNameLink">FragmentScope</span></a> (implements java.lang.annotation.Annotation)</li>
-<li type="circle">com.king.frame.mvvmframe.di.scope.<a href="com/king/frame/mvvmframe/di/scope/ViewModelKey.html" title="com.king.frame.mvvmframe.di.scope中的注释"><span class="typeNameLink">ViewModelKey</span></a> (implements java.lang.annotation.Annotation)</li>
 </ul>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
