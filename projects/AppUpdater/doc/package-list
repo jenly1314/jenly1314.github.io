@@ -1,0 +1,7 @@
+com.king.app.updater
+com.king.app.updater.callback
+com.king.app.updater.constant
+com.king.app.updater.http
+com.king.app.updater.provider
+com.king.app.updater.service
+com.king.app.updater.util
