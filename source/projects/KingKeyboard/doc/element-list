@@ -1,0 +1,12 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.king.keyboard/Keyboard.Key///PointingToDeclaration/com/king/keyboard/Keyboard.Key.html
+$dokka.location:com.king.keyboard/Keyboard.Row///PointingToDeclaration/com/king/keyboard/Keyboard.Row.html
+$dokka.location:com.king.keyboard/KeyboardView.OnKeyboardActionListener///PointingToDeclaration/com/king/keyboard/KeyboardView.OnKeyboardActionListener.html
+$dokka.location:com.king.keyboard/KingKeyboard.Companion///PointingToDeclaration/com/king/keyboard/KingKeyboard.Companion.html
+$dokka.location:com.king.keyboard/KingKeyboard.KeyboardType///PointingToDeclaration/com/king/keyboard/KingKeyboard.KeyboardType.html
+$dokka.location:com.king.keyboard/KingKeyboard.OnKeyListener///PointingToDeclaration/com/king/keyboard/KingKeyboard.OnKeyListener.html
+$dokka.location:com.king.keyboard/KingKeyboardView.Companion///PointingToDeclaration/com/king/keyboard/KingKeyboardView.Companion.html
+$dokka.location:com.king.keyboard/KingKeyboardView.Config///PointingToDeclaration/com/king/keyboard/KingKeyboardView.Config.html
+com.king.keyboard
+
