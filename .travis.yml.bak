@@ -1,0 +1,30 @@
+language: node_js
+node_js: stable
+
+before_install:
+  - npm install -g hexo-cli
+
+install:
+  - npm install
+
+script:
+  - hexo clean
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "Jenly"
+  - git config user.email "jenly1314@gmail.com"
+  - git add .
+  - git commit -a -m "Auto update docs by Travis CI."
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+
+branches:
+  only:
+    - blog-source
+
+env:
+ global:
+   - GH_REF: github.com/jenly1314/jenly1314.github.io.git
+   

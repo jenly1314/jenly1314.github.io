@@ -1,6 +1,6 @@
 # Jenly's blog
 
-[![CI](https://app.travis-ci.com/jenly1314/jenly1314.github.io.svg?branch=blog-source)](https://app.travis-ci.com/github/jenly1314/jenly1314.github.io)
+[![CI](https://github.com/jenly1314/jenly1314.github.io/workflows/build/badge.svg)](https://github.com/jenly1314/jenly1314.github.io/actions)
 [![Blog](https://img.shields.io/badge/blog-Jenly-9932CC.svg)](https://jenly1314.github.io)
 
 This is my personal blog repository. [https://jenly1314.github.io](https://jenly1314.github.io)
