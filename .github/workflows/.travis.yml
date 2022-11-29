@@ -1,0 +1,41 @@
+name: CI
+ 
+on:
+  push:
+    branches:
+    - blog-source
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.12.1]
+ 
+    steps:
+      - uses: actions/checkout@v1
+ 
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+ 
+      - name: Install dependencies
+        run: |
+          npm install -g hexo-cli
+          npm install
+      - name: Hexo generate
+        run: |
+          hexo clean && hexo generate
+      - name: Hexo deploy
+        env:
+	  GH_REF: github.com/jenly1314/jenly1314.github.io.git
+          GH_TOKEN: ${{secrets.ACCESS_TOKEN}}
+        run: |
+          cd ./public
+          git init
+          git config user.name "Jenly"
+          git config user.email "jenly1314@gmail.com"
+          git add .
+          git commit -a -m "Auto update docs by Travis CI."
+          git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master

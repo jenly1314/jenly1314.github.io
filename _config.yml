@@ -29,7 +29,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: ['README.md', projects/**,api/**]
+skip_render: ['README.md', projects/**,api/**,.github/**]
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -100,8 +100,9 @@ theme: hexo-theme-matery
 
 deploy:
   type: git 
- # repo: git@github.com:jenly1314/jenly1314.github.io.git
+#  repo: git@github.com:jenly1314/jenly1314.github.io.git
   repo: https://github.com/jenly1314/jenly1314.github.io.git
+  branch: master
   
 search:
   path: search.xml
