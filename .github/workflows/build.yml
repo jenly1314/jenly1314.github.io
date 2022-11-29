@@ -36,5 +36,5 @@ jobs:
           git config user.name "Jenly"
           git config user.email "jenly1314@gmail.com"
           git add .
-          git commit -a -m "Auto update docs by Travis CI."
+          git commit -a -m "Auto update docs by CI."
           git push --force --quiet "https://${GH_TOKEN}@github.com/jenly1314/jenly1314.github.io.git" master:master
