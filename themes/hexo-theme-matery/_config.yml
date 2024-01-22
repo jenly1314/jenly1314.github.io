@@ -177,13 +177,13 @@ myProjects:
         url: http://github.com/jenly1314/UltraSwipeRefresh
         desc: UltraSwipeRefresh一个可带来极致体验的Compose刷新组件。
     AndroidKTX:
-        icon: fa-refresh
-        iconBackground: 'linear-gradient(to bottom right, #17CAE1 0%, #8C2BE2 100%)'
+        icon: fa-android
+        iconBackground: 'linear-gradient(to bottom right, #17CAE1 0%, #7B68EE 100%)'
         url: http://github.com/jenly1314/AndroidKTX
         desc: AndroidKTX一个简化 Android 开发的 Kotlin 工具类集合。
     MLKit:
         icon: fa-camera
-        iconBackground: 'linear-gradient(to bottom right, #17AAA1 0%, #8A2AE2 100%)'
+        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #8A2AE2 100%)'
         url: http://github.com/jenly1314/MLKit
         desc: ML Kit是一个强大易用的工具包。通过ML Kit您可以很轻松的实现文字识别、条码识别、图像标记、人脸检测、对象检测等功能。
     ZXingLite:
