@@ -1,6 +1,6 @@
 # Jenly's blog
 
-[![CI](https://github.com/jenly1314/jenly1314.github.io/workflows/build/badge.svg)](https://github.com/jenly1314/jenly1314.github.io/actions)
+[![build](https://github.com/jenly1314/jenly1314.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/jenly1314/jenly1314.github.io/actions/workflows/build.yml)
 [![Blog](https://img.shields.io/badge/blog-Jenly-9932CC.svg)](https://jenly1314.github.io)
 
 This is my personal blog repository. [https://jenly1314.github.io](https://jenly1314.github.io)
@@ -18,8 +18,7 @@ GitHub: <a title="GitHub开源项目" href="https://github.com/jenly1314" target
 
 Gitee: <a title="Gitee开源项目" href="https://gitee.com/jenly1314" target="_blank">jenly1314</a>
 
-加入QQ群: <a title="点击加入QQ群" href="http://shang.qq.com/wpa/qunwpa?idkey=8fcc6a2f88552ea44b1411582c94fd124f7bb3ec227e2a400dbbfaad3dc2f5ad" target="_blank">20867961</a>
+加入QQ群: <a title="点击加入QQ群" href="https://qm.qq.com/cgi-bin/qm/qr?k=6_RukjAhwjAdDHEk2G7nph-o8fBFFzZz" target="_blank">20867961</a> 、<a title="点击加入QQ群" href="https://qm.qq.com/cgi-bin/qm/qr?k=Z9pobM8bzAW7tM_8xC31W8IcbIl0A-zT" target="_blank">64020761</a>
    <div>
-       <img src="https://jenly1314.github.io/image/jenly666.png">
-       <img src="https://jenly1314.github.io/image/qqgourp.png">
+       <img src="https://jenly1314.github.io/image/page/footer.png">
    </div>
