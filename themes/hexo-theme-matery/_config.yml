@@ -185,7 +185,7 @@ myProjects:
         icon: fa-camera
         iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #8A2AE2 100%)'
         url: http://github.com/jenly1314/MLKit
-        desc: ML Kit是一个强大易用的工具包。通过ML Kit您可以很轻松的实现文字识别、条码识别、图像标记、人脸检测、对象检测等功能。
+        desc: 通过ML Kit您可以很轻松的实现文字识别、条码识别、图像标记、人脸检测、对象检测等功能。
     ZXingLite:
         icon: fa-qrcode
         iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #4169E1 100%)'
@@ -205,7 +205,7 @@ myProjects:
         icon: fa-home
         iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #7B68EE 100%)'
         url: https://github.com/jenly1314/MVPFrame
-        desc: MVPFrame是一个集合了 Retrofit2 + RXJava2 + OkHttp3 + Mosby3 二次封装构建的MVP快速开发框架，为敏捷开发而生。
+        desc: MVPFrame是一个MVP快速开发框架，为敏捷开发而生。
     AppUpdater:
         icon: fa-download
         iconBackground: 'linear-gradient(to bottom right, #7B68EE 0%, #32CD32 100%)'
@@ -216,16 +216,16 @@ myProjects:
         iconBackground: 'linear-gradient(to bottom right, #32CD32 0%, #17AAE1 100%)'
         url: https://github.com/jenly1314/CircleProgressView
         desc: CircleProgressView是一个圆形渐变的进度动画控件，动画效果纵享丝滑。
-    KingTV:
-        icon: fa-play
-        iconBackground: 'linear-gradient(to bottom right, #17AAE1 0%, #008000 100%)'
-        url: http://github.com/jenly1314/KingTV
-        desc: 一个基于MVP构建的高仿全民直播（全民TV）开源项目。
     GiftSurfaceView:
         icon: fa-gift
         iconBackground: 'linear-gradient(to bottom right, #00BFFF 0%, #FF1493 100%)'
         url: https://github.com/jenly1314/GiftSurfaceView
         desc: GiftSurfaceView 是一个用于直播类App，直播间送礼物拼图案的动画控件。
+    KingTV:
+        icon: fa-play
+        iconBackground: 'linear-gradient(to bottom right, #17AAE1 0%, #008000 100%)'
+        url: http://github.com/jenly1314/KingTV
+        desc: 一个基于MVP构建的高仿全民直播（全民TV）开源项目。
     Base:
         icon: fa-fort-awesome
         iconBackground: 'linear-gradient(to bottom right, #32CD32 0%, #DAA520 100%)'
