@@ -216,6 +216,11 @@ myProjects:
         iconBackground: 'linear-gradient(to bottom right, #32CD32 0%, #17AAE1 100%)'
         url: https://github.com/jenly1314/CircleProgressView
         desc: CircleProgressView是一个圆形渐变的进度动画控件，动画效果纵享丝滑。
+    GiftSurfaceView:
+        icon: fa-gift
+        iconBackground: 'linear-gradient(to bottom right, #00BFFF 0%, #FF1493 100%)'
+        url: https://github.com/jenly1314/GiftSurfaceView
+        desc: GiftSurfaceView 是一个用于直播类App，直播间送礼物拼图案的动画控件。
     KingTV:
         icon: fa-play
         iconBackground: 'linear-gradient(to bottom right, #17AAE1 0%, #008000 100%)'
@@ -226,12 +231,6 @@ myProjects:
         iconBackground: 'linear-gradient(to bottom right, #32CD32 0%, #DAA520 100%)'
         url: https://github.com/jenly1314/Base
         desc: Base是针对于Android开发封装好一些常用的基类，主要包括通用的Adapter、Activity、Fragment、Dialog等、和一些常用的Util类，只为更简单。
-    GiftSurfaceView:
-        icon: fa-gift
-        iconBackground: 'linear-gradient(to bottom right, #00BFFF 0%, #FF1493 100%)'
-        url: https://github.com/jenly1314/GiftSurfaceView
-        desc: GiftSurfaceView 是一个用于直播类App，直播间送礼物拼图案的动画控件。
-
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
