@@ -1,6 +1,5 @@
 ---
 title: 跨平台之AppCan与DeviceOne对比点评记录
-date: 2016-07-14 09:50:44
 img: /images/20160714.png
 top: true
 categories: 跨平台
@@ -8,6 +7,8 @@ tags:
   - 跨平台
   - AppCan
   - DeviceOne
+abbrlink: 2972603156
+date: 2016-07-14 09:50:44
 ---
 
 目前已有的移动中间件开发技术主要包括：`IOS`、`Android`或`WindowsPhone`的纯原生开发；以`Html5`技术为核心的中间件开发（例如：`PhoneGap`, `HBuilder`, `AppCan`, `ApiCloud`）；以`OpenGL`技术为核心的中间件开发(例如：`CrossApp`)；以代码转换和原生反射技术为核心的中间件开发(例如：`Titanium`，`Xamarin`，`ReactNative`)；以及以虚拟UI、抽象SDK、动态组件为核心的中间件开发（例如：`DeviceOne`）。

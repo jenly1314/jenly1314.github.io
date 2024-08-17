@@ -1,6 +1,5 @@
 ---
 title: Android之SlidingPaneLayout侧滑效果扩展（SuperSlidingPaneLayout）
-date: 2016-10-08 17:06:59
 img: /images/20161008.jpg
 top: true
 categories: Android
@@ -8,6 +7,8 @@ tags:
   - SlidingPaneLayout
   - 仿QQ侧滑效果
   - Android
+abbrlink: 1790930363
+date: 2016-10-08 17:06:59
 ---
 
 ### 前言：
@@ -19,27 +20,27 @@ tags:
 我们在`SuperSlidingPaneLayout`中定义一个枚举来表示不同的侧滑效果模式：
 ```java
 public enum Mode {
- 
+
         DEFAULT(0),
         TRANSLATION(1),
         SCALE_MENU(2),
         SCALE_PANEL(3),
         SCALE_BOTH(4),
         TRANSLATION_SCALE(5);
- 
+
         private int mValue;
- 
+
         Mode(int value){
             this.mValue = value;
         }
- 
+
         private static Mode getFromInt(int value){
- 
+
             for(Mode mode : Mode.values()){
                 if(mode.mValue == value)
                     return mode;
             }
- 
+
             return DEFAULT;
         }
     }
@@ -76,7 +77,7 @@ public enum Mode {
                 mMenuPanel.setTranslationX((slideOffset-1) * mMenuPanel.getWidth());
                 panel.setScaleX(1);
                 panel.setScaleY(1);
- 
+
                 break;
             case SCALE_MENU://缩放菜单效果
                 mMenuPanel.setPivotX(-0.2f * mMenuPanel.getWidth());
@@ -85,26 +86,26 @@ public enum Mode {
                 mMenuPanel.setScaleY(scaleLeft);
                 panel.setScaleX(1);
                 panel.setScaleY(1);
- 
+
                 break;
             case SCALE_PANEL://缩放面板效果
                 panel.setPivotX(0);
                 panel.setPivotY(panel.getHeight()/2.0f);
                 panel.setScaleX(scale);
                 panel.setScaleY(scale);
- 
+
                 break;
             case SCALE_BOTH://菜单面板都缩放效果
                 mMenuPanel.setPivotX(-0.2f * mMenuPanel.getWidth());
                 mMenuPanel.setPivotY(mMenuPanel.getHeight() / 2.0f);
                 mMenuPanel.setScaleX(scaleLeft);
                 mMenuPanel.setScaleY(scaleLeft);
- 
+
                 panel.setPivotX(0);
                 panel.setPivotY(panel.getHeight()/2.0f);
                 panel.setScaleX(scale);
                 panel.setScaleY(scale);
- 
+
                 break;
             case TRANSLATION_SCALE://平移缩放效果
                 mMenuPanel.setTranslationX((slideOffset-1) * mMenuPanel.getWidth() / 2.0f);
@@ -112,12 +113,12 @@ public enum Mode {
                 mMenuPanel.setPivotY(mMenuPanel.getHeight() / 2.0f);
                 mMenuPanel.setScaleX(scaleLeft);
                 mMenuPanel.setScaleY(scaleLeft);
- 
+
                 panel.setPivotX(0);
                 panel.setPivotY(panel.getHeight()/2.0f);
                 panel.setScaleX(scale);
                 panel.setScaleY(scale);
- 
+
                 break;
             case DEFAULT://默认 即菜单固定
             default:
@@ -125,7 +126,7 @@ public enum Mode {
                 panel.setPivotY(0);
                 panel.setScaleX(1);
                 panel.setScaleY(1);
- 
+
                 break;
         }
     }
@@ -144,6 +145,6 @@ public enum Mode {
 ```
 ### 收工：
 这样几种不同的侧滑效果就算完成了，有木有很简单？下面我们来看下最终的效果图：
-![](Android之SlidingPaneLayout侧滑效果扩展控件/20161008172543455.gif)
+![](../images/article_images/20161008172543455.gif)
 
 [SuperSlidingPaneLayout](https://github.com/jenly1314/SuperSlidingPaneLayout)最新源码已上传至`github`欢迎`Star`和`Fork`。
