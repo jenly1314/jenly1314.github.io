@@ -145,6 +145,6 @@ public enum Mode {
 ```
 ### 收工：
 这样几种不同的侧滑效果就算完成了，有木有很简单？下面我们来看下最终的效果图：
-![](../images/article_images/20161008172543455.gif)
+![](../images/article/20161008172543455.gif)
 
 [SuperSlidingPaneLayout](https://github.com/jenly1314/SuperSlidingPaneLayout)最新源码已上传至`github`欢迎`Star`和`Fork`。
