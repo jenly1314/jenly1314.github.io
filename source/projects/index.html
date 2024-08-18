@@ -8,21 +8,26 @@
   <style>
     body {
         font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background-color: #f9f9f9;
-        margin: 0;
-        padding: 20px;
     }
+
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-template-columns: repeat(5, 1fr); /* Default 5 columns */
         gap: 20px;
-        width: 90%;
+        padding: 20px;
+        box-sizing: border-box;
         max-width: 1200px;
+        background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);
+        background-size: 20px 20px;
     }
+
     .project-card {
         background: white;
         border-radius: 16px;
@@ -33,59 +38,77 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         cursor: pointer;
         text-decoration: none;
-        aspect-ratio: 1 / 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: relative;
-        max-height: 280px; /* Adjusted max-height for 5 lines of content */
+        aspect-ratio: 1 / 1;
     }
+
     .project-card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-10px) scale(1.05);
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
     }
+
     .project-card h3 {
-        font-size: 1.4em;
+        font-size: 1.2em;
         margin: 10px 0;
         color: #0366d6;
-        cursor: pointer;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        transition: color 0.3s ease;
-        text-align: center; /* Ensure title is centered */
     }
-    .project-card h3:hover {
-        color: #024b72;
-        white-space: normal; /* Show full title on hover */
-        overflow: visible;
-        text-overflow: clip;
-    }
+
     .project-card p {
         color: #666;
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 5; /* Display up to 5 lines */
+        -webkit-line-clamp: 5;
         overflow: hidden;
         text-overflow: ellipsis;
-        margin: 0 15px;
+        margin: 0;
         line-height: 1.4em;
-        max-height: 7em; /* Adjusted for 5 lines of content */
-        overflow: hidden; /* Hide overflow */
+        max-height: 7em;
     }
+
     .project-card a {
         color: inherit;
         text-decoration: none;
     }
+
     .project-card a:hover {
         text-decoration: underline;
     }
+
     .no-repos {
         font-size: 1.2em;
         color: #666;
         text-align: center;
         margin: 20px;
+    }
+
+    @media (max-width: 1200px) {
+        .grid-container {
+            grid-template-columns: repeat(4, 1fr); /* 4 columns on medium screens */
+        }
+    }
+
+    @media (max-width: 900px) {
+        .grid-container {
+            grid-template-columns: repeat(3, 1fr); /* 3 columns on smaller screens */
+        }
+    }
+
+    @media (max-width: 600px) {
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+        }
+    }
+
+    @media (max-width: 400px) {
+        .grid-container {
+            grid-template-columns: 1fr; /* 1 column on very small screens */
+        }
     }
   </style>
 </head>
@@ -130,6 +153,7 @@
                   card.href = repo.html_url;
                   card.target = '_blank';
                   card.setAttribute('aria-label', `View ${repo.name} repository`);
+                  card.setAttribute('title', repo.name); // Add title attribute for tooltip
                   card.innerHTML = `
                       <h3>${repo.name}</h3>
                       <p>${repo.description || 'No description available'}</p>
