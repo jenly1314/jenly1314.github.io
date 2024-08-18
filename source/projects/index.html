@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Projects Grid</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px 0; /* 上下各添加 20px 边距 */
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        width: 80%;
+    }
+    .project-card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        text-align: center;
+        padding: 10px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-card:hover {
+        transform: scale(1.03);
+    }
+    .project-card h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+    .project-card p {
+        color: #666;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5; /* Limit to 5 lines */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 10px 15px; /* Add vertical and horizontal padding */
+        line-height: 1.5em; /* Adjust line-height to control space */
+    }
+    .project-card a {
+        color: #0366d6;
+        text-decoration: none;
+    }
+    .project-card a:hover {
+        text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<div class="grid-container" id="projects-grid"></div>
+
+<script>
+  const username = 'jenly1314'; // Replace with the GitHub username
+  const apiUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
+
+  async function fetchAllRepos(url) {
+      let repos = [];
+      let response;
+      do {
+          response = await fetch(url);
+          const data = await response.json();
+          repos = repos.concat(data);
+          url = response.headers.get('Link')?.includes('rel="next"') ? response.headers.get('Link').split(',')[0].match(/<(.*)>/)[1] : null;
+      } while (url);
+      return repos;
+  }
+
+  fetchAllRepos(apiUrl)
+      .then(data => {
+          const filteredRepos = data.filter(repo => repo.stargazers_count >= 10);
+          const sortedRepos = filteredRepos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+          const gridContainer = document.getElementById('projects-grid');
+          sortedRepos.forEach(repo => {
+              const card = document.createElement('a');
+              card.className = 'project-card';
+              card.href = repo.html_url;
+              card.target = '_blank';
+              card.innerHTML = `
+                  <h3>${repo.name}</h3>
+                  <p>${repo.description || 'No description available'}</p>
+              `;
+              gridContainer.appendChild(card);
+          });
+      })
+      .catch(error => console.error('Error fetching GitHub projects:', error));
+</script>
+</body>
+</html>
