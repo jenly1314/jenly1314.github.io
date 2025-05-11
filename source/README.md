@@ -5,9 +5,6 @@
 
 This is my personal blog repository. [https://jenly1314.github.io](https://jenly1314.github.io)
 
-<div>
-   <img src="https://jenly1314.github.io/image/page/rewardcode.png">
-</div>
 
 ## 关于我
 
