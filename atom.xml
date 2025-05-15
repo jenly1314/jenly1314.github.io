@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jenly</title>
+  
+  <subtitle>Hello World</subtitle>
+  <link href="https://jenly1314.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://jenly1314.github.io/"/>
+  <updated>2025-05-15T15:58:02.525Z</updated>
+  <id>https://jenly1314.github.io/</id>
+  
+  <author>
+    <name>Jenly</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android之SlidingPaneLayout侧滑效果扩展（SuperSlidingPaneLayout）</title>
+    <link href="https://jenly1314.github.io/posts/1790930363.html"/>
+    <id>https://jenly1314.github.io/posts/1790930363.html</id>
+    <published>2016-10-08T17:06:59.000Z</published>
+    <updated>2025-05-15T15:58:02.525Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;前言：&quot;&gt;&lt;a href=&quot;#前言：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Android" scheme="https://jenly1314.github.io/categories/Android/"/>
+    
+    
+    <category term="SlidingPaneLayout" scheme="https://jenly1314.github.io/tags/SlidingPaneLayout/"/>
+    
+    <category term="仿QQ侧滑效果" scheme="https://jenly1314.github.io/tags/%E4%BB%BFQQ%E4%BE%A7%E6%BB%91%E6%95%88%E6%9E%9C/"/>
+    
+    <category term="Android" scheme="https://jenly1314.github.io/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码统计工具实测点评</title>
+    <link href="https://jenly1314.github.io/posts/2582324225.html"/>
+    <id>https://jenly1314.github.io/posts/2582324225.html</id>
+    <published>2016-09-26T16:52:07.000Z</published>
+    <updated>2025-05-15T15:58:02.525Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-CodeMetric&quot;&gt;&lt;a href=&quot;#1-CodeMetric&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="实用工具" scheme="https://jenly1314.github.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="实用工具" scheme="https://jenly1314.github.io/tags/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="代码统计" scheme="https://jenly1314.github.io/tags/%E4%BB%A3%E7%A0%81%E7%BB%9F%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>跨平台之AppCan与DeviceOne对比点评记录</title>
+    <link href="https://jenly1314.github.io/posts/2972603156.html"/>
+    <id>https://jenly1314.github.io/posts/2972603156.html</id>
+    <published>2016-07-14T09:50:44.000Z</published>
+    <updated>2025-05-15T15:58:02.525Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;目前已有的移动中间件开发技术主要包括：&lt;code&gt;IOS&lt;/code&gt;、&lt;code&gt;Android&lt;/code&gt;或&lt;code&gt;WindowsPhone&lt;/code&gt;的纯原生开发；以&lt;code&gt;Html5&lt;/code&gt;技术为核心的中间件开发（例如：&lt;code&gt;PhoneGap</summary>
+        
+      
+    
+    
+    
+    <category term="跨平台" scheme="https://jenly1314.github.io/categories/%E8%B7%A8%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+    <category term="跨平台" scheme="https://jenly1314.github.io/tags/%E8%B7%A8%E5%B9%B3%E5%8F%B0/"/>
+    
+    <category term="AppCan" scheme="https://jenly1314.github.io/tags/AppCan/"/>
+    
+    <category term="DeviceOne" scheme="https://jenly1314.github.io/tags/DeviceOne/"/>
+    
+  </entry>
+  
+</feed>
