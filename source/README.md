@@ -3,7 +3,7 @@
 [![build](https://github.com/jenly1314/jenly1314.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/jenly1314/jenly1314.github.io/actions/workflows/build.yml)
 [![Blog](https://img.shields.io/badge/blog-Jenly-9932CC.svg)](https://jenly1314.github.io)
 
-This is my personal blog repository. [https://jenly1314.github.io](https://jenly1314.github.io)  <img src="https://jenly1314.github.io/image/page/hi.png" title="Hi" width="26" style="vertical-align: middle;">
+This is my personal blog repository. [https://jenly1314.github.io](https://jenly1314.github.io)  <img src="https://jenly1314.github.io/image/page/hi.png" title="Hi" width="30" align="absmiddle">
 
 ## 关于我
 
