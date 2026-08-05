@@ -98,9 +98,9 @@ socialLink:
   weibo: https://weibo.com/jenly1314
   facebook: # https://facebook.com/jenly1314
   twitter: # https://twitter.com/jenly1314
-  qqgroup: 20867961
-  qqgroupkey: 8fcc6a2f88552ea44b1411582c94fd124f7bb3ec227e2a400dbbfaad3dc2f5ad
-  about: https://about.me/jenly1314
+  qqgroup: # 20867961
+  qqgroupkey: # 8fcc6a2f88552ea44b1411582c94fd124f7bb3ec227e2a400dbbfaad3dc2f5ad
+  about: # https://about.me/jenly1314
 
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
@@ -161,7 +161,7 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/avatar.jpg
+  avatar: /medias/avatar.png
   career: Software Engineer
   introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
 
