@@ -172,65 +172,65 @@ myProjects:
   enable: true
   data:
     UltraSwipeRefresh:
-        icon: fa-refresh
-        iconBackground: 'linear-gradient(to bottom right, #17AAE1 0%, #8A2BE2 100%)'
-        url: http://github.com/jenly1314/UltraSwipeRefresh
-        desc: UltraSwipeRefresh一个可带来极致体验的Compose刷新组件。
+      icon: fa-refresh
+      iconBackground: 'linear-gradient(to bottom right, #17AAE1 0%, #8A2BE2 100%)'
+      url: http://github.com/jenly1314/UltraSwipeRefresh
+      desc: UltraSwipeRefresh一个可带来极致体验的Compose刷新组件。
     AppUpdater:
-        icon: fa-download
-        iconBackground: 'linear-gradient(to bottom right, #7B68EE 0%, #32CD32 100%)'
-        url: https://github.com/jenly1314/AppUpdater
-        desc: AppUpdater是一个专注于App更新，一键傻瓜式集成App版本升级的开源库。
+      icon: fa-download
+      iconBackground: 'linear-gradient(to bottom right, #7B68EE 0%, #32CD32 100%)'
+      url: https://github.com/jenly1314/AppUpdater
+      desc: AppUpdater是一个专注于App更新，一键傻瓜式集成App版本升级的开源库。
     AndroidKTX:
-        icon: fa-android
-        iconBackground: 'linear-gradient(to bottom right, #17CAE1 0%, #7B68EE 100%)'
-        url: http://github.com/jenly1314/AndroidKTX
-        desc: AndroidKTX一个简化 Android 开发的 Kotlin 工具类集合。
+      icon: fa-android
+      iconBackground: 'linear-gradient(to bottom right, #17CAE1 0%, #7B68EE 100%)'
+      url: http://github.com/jenly1314/AndroidKTX
+      desc: AndroidKTX一个简化 Android 开发的 Kotlin 工具类集合。
     MLKit:
-        icon: fa-camera
-        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #8A2AE2 100%)'
-        url: http://github.com/jenly1314/MLKit
-        desc: 通过ML Kit您可以很轻松的实现文字识别、条码识别、图像标记、人脸检测、对象检测等功能。
+      icon: fa-camera
+      iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #8A2AE2 100%)'
+      url: http://github.com/jenly1314/MLKit
+      desc: 通过ML Kit您可以很轻松的实现文字识别、条码识别、图像标记、人脸检测、对象检测等功能。
     ZXingLite:
-        icon: fa-qrcode
-        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #4169E1 100%)'
-        url: https://github.com/jenly1314/ZXingLite
-        desc: 一个基于ZXing优化精简的开源扫码库，扫码识别速度快如微信。
+      icon: fa-qrcode
+      iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #4169E1 100%)'
+      url: https://github.com/jenly1314/ZXingLite
+      desc: 一个基于ZXing优化精简的开源扫码库，扫码识别速度快如微信。
     MVVMFrame:
-        icon: fa-home
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #7B68EE 100%)'
-        url: https://github.com/jenly1314/MVVMFrame
-        desc: 基于Google官方推出的Jitpack（Lifecycle，LiveData，ViewModel，Room）构建的MVVM快速开发框架。
+      icon: fa-home
+      iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #7B68EE 100%)'
+      url: https://github.com/jenly1314/MVVMFrame
+      desc: 基于Google官方推出的Jitpack（Lifecycle，LiveData，ViewModel，Room）构建的MVVM快速开发框架。
     MVPFrame:
-        icon: fa-home
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #7B68EE 100%)'
-        url: https://github.com/jenly1314/MVPFrame
-        desc: MVPFrame是一个MVP快速开发框架，为敏捷开发而生。
+      icon: fa-home
+      iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #7B68EE 100%)'
+      url: https://github.com/jenly1314/MVPFrame
+      desc: MVPFrame是一个MVP快速开发框架，为敏捷开发而生。
     WanAndroid:
-        icon: fa-android
-        iconBackground: 'linear-gradient(to bottom right, #8A2BE2 0%, #00BFFF 100%)'
-        url: https://github.com/jenly1314/WanAndroid
-        desc: 基于JetPack（Lifecycle，LiveData，ViewModel，Room）构建的WanAndroid开源项目。
+      icon: fa-android
+      iconBackground: 'linear-gradient(to bottom right, #8A2BE2 0%, #00BFFF 100%)'
+      url: https://github.com/jenly1314/WanAndroid
+      desc: 基于JetPack（Lifecycle，LiveData，ViewModel，Room）构建的WanAndroid开源项目。
     CircleProgressView:
-        icon: fa-spinner
-        iconBackground: 'linear-gradient(to bottom right, #32CD32 0%, #17AAE1 100%)'
-        url: https://github.com/jenly1314/CircleProgressView
-        desc: CircleProgressView是一个圆形渐变的进度动画控件，动画效果纵享丝滑。
+      icon: fa-spinner
+      iconBackground: 'linear-gradient(to bottom right, #32CD32 0%, #17AAE1 100%)'
+      url: https://github.com/jenly1314/CircleProgressView
+      desc: CircleProgressView是一个圆形渐变的进度动画控件，动画效果纵享丝滑。
     GiftSurfaceView:
-        icon: fa-gift
-        iconBackground: 'linear-gradient(to bottom right, #00BFFF 0%, #FF1493 100%)'
-        url: https://github.com/jenly1314/GiftSurfaceView
-        desc: GiftSurfaceView 是一个用于直播类App，直播间送礼物拼图案的动画控件。
+      icon: fa-gift
+      iconBackground: 'linear-gradient(to bottom right, #00BFFF 0%, #FF1493 100%)'
+      url: https://github.com/jenly1314/GiftSurfaceView
+      desc: GiftSurfaceView 是一个用于直播类App，直播间送礼物拼图案的动画控件。
     KingTV:
-        icon: fa-play
-        iconBackground: 'linear-gradient(to bottom right, #17AAE1 0%, #008000 100%)'
-        url: http://github.com/jenly1314/KingTV
-        desc: 一个基于MVP构建的高仿全民直播（全民TV）开源项目。
+      icon: fa-play
+      iconBackground: 'linear-gradient(to bottom right, #17AAE1 0%, #008000 100%)'
+      url: http://github.com/jenly1314/KingTV
+      desc: 一个基于MVP构建的高仿全民直播（全民TV）开源项目。
     Base:
-        icon: fa-fort-awesome
-        iconBackground: 'linear-gradient(to bottom right, #32CD32 0%, #DAA520 100%)'
-        url: https://github.com/jenly1314/Base
-        desc: Base是针对于Android开发封装好一些常用的基类，使用时更简单。
+      icon: fa-fort-awesome
+      iconBackground: 'linear-gradient(to bottom right, #32CD32 0%, #DAA520 100%)'
+      url: https://github.com/jenly1314/Base
+      desc: Base是针对于Android开发封装好一些常用的基类，使用时更简单。
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
